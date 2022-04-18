@@ -1,0 +1,41 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/componentsjs/^5.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/auth-api/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/app/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/common/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/http/*/components/context.jsonld"
+  ],
+  "@graph": [
+    {
+      "@id": "urn:antwika:auth-api:routes:health",
+      "@type": "HttpRoute",
+      "path": "/health",
+      "routes": [
+        {
+          "@type": "HttpRoute",
+          "path": "/v1",
+          "endpoint": {
+            "@type": "TextEndpoint",
+            "code": 200,
+            "text": "Health endpoint v1"
+          }
+        },
+        {
+          "@type": "HttpRoute",
+          "path": "/v2",
+          "endpoint": {
+            "@type": "TextEndpoint",
+            "code": 200,
+            "text": "Health endpoint v2"
+          }
+        }
+      ],
+      "endpoint": {
+        "@type": "TextEndpoint",
+        "code": 200,
+        "text": "Health endpoint"
+      }
+    }
+  ]
+}

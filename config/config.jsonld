@@ -1,0 +1,45 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/componentsjs/^5.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/auth-api/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/app/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/common/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/http/*/components/context.jsonld"
+  ],
+  "import": [
+    "./routes/health/health.jsonld"
+  ],
+  "@graph": [
+    {
+      "@id": "urn:antwika:app:App",
+      "@type": "App",
+      "name": "My api server",
+      "services": [
+        {
+          "@type": "HttpServer",
+          "name": "My http server",
+          "services": [],
+          "host": "localhost",
+          "port": 4001,
+          "httpHandlers": [
+            {
+              "@type": "HttpRoute",
+              "path": "/",
+              "endpoint": {
+                "@type": "TextEndpoint",
+                "code": 200,
+                "text": "Root endpoint"
+              }
+            },
+            { "@id": "urn:antwika:auth-api:routes:health" },
+            {
+              "@type": "TextEndpoint",
+              "code": 404,
+              "text": "Not found"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
