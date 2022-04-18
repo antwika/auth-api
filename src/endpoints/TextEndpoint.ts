@@ -2,6 +2,7 @@ import { IHttpHandler, IHttpHandlable } from '@antwika/http';
 
 export class TextEndpoint implements IHttpHandler {
   private readonly code: number;
+
   private readonly text: string;
 
   constructor(code: number, text: string) {
@@ -10,7 +11,7 @@ export class TextEndpoint implements IHttpHandler {
   }
 
   async canHandle(handlable: IHttpHandlable) {
-    return true;
+    return !!handlable;
   }
 
   async handle(handlable: IHttpHandlable) {

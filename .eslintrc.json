@@ -1,0 +1,40 @@
+{
+    "globals": {
+        "NodeJS": true
+    },
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base",
+        "plugin:import/recommended",
+        "plugin:jest/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "settings": {
+        "import/resolver": {
+          "typescript": {
+          }
+        }
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "jest"
+    ],
+    "rules": {
+        "no-use-before-define": 0,
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "@typescript-eslint/no-unused-vars": "error",
+        "no-unused-vars": 0,
+        "import/extensions": ["error", "never"],
+        "import/prefer-default-export": 0,
+        "class-methods-use-this": 0,
+        "no-console": 0,
+        "no-restricted-syntax": 0
+    }
+}
