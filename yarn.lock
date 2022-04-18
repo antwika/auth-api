@@ -27,12 +27,12 @@
   resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.6.tgz#47d145c3aac182ff37b737e1e26355c5df58286b"
   integrity sha512-FShbKQouk2zcWU6875FGT1LQlOWRijJiFv1Yx47QOtXtGN6GYv10E7kMa4ppz7Kt0sEPo2dq0tnRFqhTY0ThUA==
 
-"@antwika/http@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.3.tgz#7d560c0e28d5bb6392605cdfaf4c5021ba026aae"
-  integrity sha512-2xRnLIc4hpLwtS6Pm85d8piL9IGydx/IB0OX56Mv0PZYPJ8AZX4r40bTwFjAy69fp/rlC/UmUPzLYdqpLJJqqg==
+"@antwika/http@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.4.tgz#47facc3fe176f2cc97633062ef2e870803a0c04d"
+  integrity sha512-Dj7kZ6F8Serjt24XGkmk/3wXfFz3z736UGl0QPDaWkJSlmnXQniETgxIBARDFnF8wL3ghXc9QcSLy3y9QXcEkw==
   dependencies:
-    "@antwika/common" "0.0.5"
+    "@antwika/common" "0.0.6"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7":
   version "7.16.7"

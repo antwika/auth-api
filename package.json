@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@antwika/common": "0.0.6",
-    "@antwika/http": "0.0.3",
+    "@antwika/http": "0.0.4",
     "@antwika/app": "0.0.2",
     "componentsjs": "^5.0.1"
   },
