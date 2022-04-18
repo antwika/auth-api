@@ -9,30 +9,25 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@antwika/app@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.2.tgz#ea74d0f284f8e693a62ca87c23352f9c4c983fea"
-  integrity sha512-ArGa8TSunoDDfLyg8kJd2vEiARiwVoIS62h6qYI6CkDgXGlmXiwwG9asQbjsrRHIFc6W0iBlOmJV8GFZ2xkPow==
+"@antwika/app@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.3.tgz#f729b294670252ef7ccbb65865b99b414d4e2c42"
+  integrity sha512-05FbxFdfqZJVGfZGhH8SA3/j15/DFKVUTOnqKz3aQUzMbTdBA39cuSgInNdw5EQ91MnlvLkpC7j/ck7/5FHDeg==
   dependencies:
-    "@antwika/common" "0.0.5"
+    "@antwika/common" "0.0.7"
     componentsjs "^5.0.1"
 
-"@antwika/common@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.5.tgz#481563a059d50390dd06b88559c836d2bc25b2be"
-  integrity sha512-AB972FhwoI+sw28fAHZzb8/4xfCDtwpxBxQ1aicNSsrRP9CESwyt5oZA2MhhVdhqLm9RhssrnKl+TAG1b3+B4Q==
+"@antwika/common@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.7.tgz#dd3a0180dca4d1dc0a10b1c406dd2fbf42e9c3f5"
+  integrity sha512-mDGwrD2oZvI9wAuWZkg2tgpeXA444xDawk/9Y5HNeD4U8TyEHmHYnDXiqLX9p4mhEil4fTFT33aVdKjJdJXonQ==
 
-"@antwika/common@0.0.6":
+"@antwika/http@0.0.6":
   version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.6.tgz#47d145c3aac182ff37b737e1e26355c5df58286b"
-  integrity sha512-FShbKQouk2zcWU6875FGT1LQlOWRijJiFv1Yx47QOtXtGN6GYv10E7kMa4ppz7Kt0sEPo2dq0tnRFqhTY0ThUA==
-
-"@antwika/http@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.4.tgz#47facc3fe176f2cc97633062ef2e870803a0c04d"
-  integrity sha512-Dj7kZ6F8Serjt24XGkmk/3wXfFz3z736UGl0QPDaWkJSlmnXQniETgxIBARDFnF8wL3ghXc9QcSLy3y9QXcEkw==
+  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.6.tgz#8a0b72b1e060475b47f20642001b812f42892ec5"
+  integrity sha512-uIKIAqKeeJWAzCIjV1aaXCg7Sv9yeAK3eccbvBS1/9Uu2yY5XR9ovYBlwoeJct6PPAy6PDbIfEEF8yWQTI+sgA==
   dependencies:
-    "@antwika/common" "0.0.6"
+    "@antwika/common" "0.0.7"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7":
   version "7.16.7"

@@ -43,9 +43,9 @@
     "husky": "7.0.4"
   },
   "dependencies": {
-    "@antwika/common": "0.0.6",
-    "@antwika/http": "0.0.4",
-    "@antwika/app": "0.0.2",
+    "@antwika/common": "0.0.7",
+    "@antwika/http": "0.0.6",
+    "@antwika/app": "0.0.3",
     "componentsjs": "^5.0.1"
   },
   "files": [
