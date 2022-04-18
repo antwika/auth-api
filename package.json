@@ -22,7 +22,8 @@
     "lint": "eslint src/**.ts",
     "test": "jest --coverage",
     "start": "npx app ./config/config.jsonld",
-    "release": "standard-version"
+    "release": "standard-version",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/jest": "27.4.1",
@@ -38,7 +39,8 @@
     "jest": "27.5.1",
     "standard-version": "9.3.2",
     "ts-jest": "27.1.4",
-    "typescript": "4.6.3"
+    "typescript": "4.6.3",
+    "husky": "^7.0.0"
   },
   "dependencies": {
     "@antwika/common": "0.0.5",
