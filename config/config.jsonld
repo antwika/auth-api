@@ -19,8 +19,8 @@
           "@type": "HttpServer",
           "name": "My http server",
           "services": [],
-          "host": "localhost",
-          "port": 4001,
+          "host": "0.0.0.0",
+          "port": 8080,
           "httpHandlers": [
             {
               "@type": "HttpRoute",
