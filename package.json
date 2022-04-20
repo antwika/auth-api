@@ -36,16 +36,17 @@
     "eslint-import-resolver-typescript": "2.7.1",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jest": "26.1.4",
+    "husky": "7.0.4",
     "jest": "27.5.1",
     "standard-version": "9.3.2",
     "ts-jest": "27.1.4",
-    "typescript": "4.6.3",
-    "husky": "7.0.4"
+    "typescript": "4.6.3"
   },
   "dependencies": {
+    "@antwika/app": "0.0.3",
     "@antwika/common": "0.0.7",
     "@antwika/http": "0.0.6",
-    "@antwika/app": "0.0.3",
+    "@antwika/prometheus": "^0.0.1",
     "componentsjs": "^5.0.1"
   },
   "files": [
