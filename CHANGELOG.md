@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/antwika/auth-api/compare/v0.0.2...v0.0.4) (2022-04-20)
+
+
+### Features
+
+* add lint step to pre-commit hook ([9b9a971](https://github.com/antwika/auth-api/commit/9b9a971cdf832978850d0534c8115e79dbd2f98a))
+* add renovate configuration ([1d81e5e](https://github.com/antwika/auth-api/commit/1d81e5ecbbb6ded4f96e3c30947895307ae3f39e))
+* add status badges to readme ([9239d25](https://github.com/antwika/auth-api/commit/9239d259692b00ddba9c9a6641b8ccf96f1a5293))
+* added husky for git hooks ([0b290e2](https://github.com/antwika/auth-api/commit/0b290e23a6799ba18a2d7a69a99c8489b86e2c87))
+* added route '/metrics' for prometheus metrics by @antwika/prometheus ([1f51be5](https://github.com/antwika/auth-api/commit/1f51be5d93bc50805e344838396e5b4f2701678d))
+
+
+### Bug Fixes
+
+* default host and port ([a90fb83](https://github.com/antwika/auth-api/commit/a90fb83c4738aa68f98460ede385e4cb1acfcd6a))
+* **deps:** update dependency @antwika/common to v0.0.6 ([ce9f8fe](https://github.com/antwika/auth-api/commit/ce9f8fe00721c5ae709a73353f58a4324a4c0ee5))
+* **deps:** update dependency @antwika/http to v0.0.4 ([ddd22b7](https://github.com/antwika/auth-api/commit/ddd22b7e297d1f56566e4bb6eb51177cbe14aead))
+* set test coverage threshold to 100% ([7695799](https://github.com/antwika/auth-api/commit/769579926c6bf2bf2b6ce5c6e2260fca4275a1cd))
+
 ### [0.0.3](https://github.com/antwika/auth-api/compare/v0.0.2...v0.0.3) (2022-04-18)
 
 
