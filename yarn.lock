@@ -29,10 +29,10 @@
   dependencies:
     "@antwika/common" "0.0.7"
 
-"@antwika/prometheus@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@antwika/prometheus/-/prometheus-0.0.1.tgz#427da7edd0eeb48954cd86d984faa71e8cba43ef"
-  integrity sha512-LjEUF3IBT3vKm66WCGkYFtL7TIUFR6P3Lz2oCeYVy1DACumieiqF2EInVb52fwfjoislce2FPemRTcCVUaOcRw==
+"@antwika/prometheus@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@antwika/prometheus/-/prometheus-0.0.2.tgz#944046f21272141398cbc40a1c60f554afa10507"
+  integrity sha512-PedqxqYNB9Xvbf09aZP1OHzdCsL8lsHFUB8TgyLSfTGmMNh9QkVReTBYtubzGaf+5Kg5F7JyWyJvson+ElkKDw==
   dependencies:
     "@antwika/http" "0.0.6"
     prom-client "^14.0.1"
