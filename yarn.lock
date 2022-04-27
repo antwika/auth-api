@@ -1579,10 +1579,10 @@ compare-func@^2.0.0:
     array-ify "^1.0.0"
     dot-prop "^5.1.0"
 
-componentsjs-generator@3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/componentsjs-generator/-/componentsjs-generator-3.0.2.tgz#4b233125c7fe151081e8ad17cafa2b952a55ca44"
-  integrity sha512-r0u4PJD6oEAmjSX920JZndA5/mb7s4UbwSf1awisEXs5s4zTp0jiOhNG3z6p5lvAHBTZHwIPf83b4yWUU/9TYA==
+componentsjs-generator@3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/componentsjs-generator/-/componentsjs-generator-3.0.3.tgz#d7e65938f2e43859b7c14e083ef7373a93d97b2e"
+  integrity sha512-Pv4+tnwAWjOkUpwt6SoD8DWfBdGfxhaqAK3zRvZIgrbPFo4V4bZpXgN8MBYXm1InRGYQeHdNUTGdXYZw0L8GjA==
   dependencies:
     "@types/lru-cache" "^5.1.0"
     "@types/semver" "^7.3.4"
