@@ -9,10 +9,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@antwika/app@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.5.tgz#aae76cada636bd52f0165f8459893c0239e262f2"
-  integrity sha512-W/gUojvrt9LUtfPA2aDOKLuf9EUCR+dscSS7G5ZKYhIJ/DBeWNjy6fBUnoWKGUhvtPZWLpLB1scSvotXGDc81w==
+"@antwika/app@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.6.tgz#e775aed14900a2305835c21deb4c407ceec6a1e7"
+  integrity sha512-PPmz9UVby+9eSdczfDaCX0yiUxX8U7+IPDLPb92zLs1nIe9uEsP2/5VQZ5Haidmv+EkQbNjR4LyJICngAqhdSQ==
   dependencies:
     "@antwika/common" "0.0.7"
     componentsjs "^5.0.1"
