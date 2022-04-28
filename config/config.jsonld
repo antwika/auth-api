@@ -12,9 +12,23 @@
   ],
   "@graph": [
     {
+      "@id": "urn:antwika:app:args",
+      "@type": "AppArguments",
+      "args": [
+        {
+          "@type": "AppArgument",
+          "shortName": "p",
+          "longName": "port",
+          "description": "Port description",
+          "value": "3000"
+        }
+      ]
+    },
+    {
       "@id": "urn:antwika:app:App",
       "@type": "App",
       "name": "My api server",
+      "appArguments": { "@id": "urn:antwika:app:args" },
       "services": [
         {
           "@type": "HttpServer",
