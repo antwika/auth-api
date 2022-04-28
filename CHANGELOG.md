@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/antwika/auth-api/compare/v0.0.4...v0.0.5) (2022-04-28)
+
+
+### Features
+
+* declare 'port' argument for application ([2fc977b](https://github.com/antwika/auth-api/commit/2fc977b631ebd5a3f41febcef3e0dabcf574bf11))
+* utilize the injected app arguments as input to the http component ([a1f1133](https://github.com/antwika/auth-api/commit/a1f1133c4a5a2135d447874410379570fe903325))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @antwika/app to v0.0.5 ([59c6794](https://github.com/antwika/auth-api/commit/59c6794bd45db1659728cbc2ac27beaf1bc4ffcb))
+* **deps:** update dependency @antwika/app to v0.0.6 ([a15d5f3](https://github.com/antwika/auth-api/commit/a15d5f328f5dfc07c6ac3c06a3adc5472cfa8a2d))
+* **deps:** update dependency @antwika/http to v0.0.7 ([1467d39](https://github.com/antwika/auth-api/commit/1467d390921f43158bd901171682d543174cd83a))
+* **deps:** update dependency @antwika/prometheus to ^0.0.2 ([5201207](https://github.com/antwika/auth-api/commit/52012076e5c22b555d1fbe0e412b7faf572306b3))
+* enforce all classes in 'src/' to be tested for coverage report ([4f5e913](https://github.com/antwika/auth-api/commit/4f5e913ba0f93098d84c2b3edac6b2d423e9fd9d))
+
 ### [0.0.4](https://github.com/antwika/auth-api/compare/v0.0.2...v0.0.4) (2022-04-20)
 
 
