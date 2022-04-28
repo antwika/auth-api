@@ -32,6 +32,7 @@
       "services": [
         {
           "@type": "HttpServer",
+          "appArguments": { "@id": "urn:antwika:app:args" },
           "name": "My http server",
           "services": [],
           "host": "0.0.0.0",
