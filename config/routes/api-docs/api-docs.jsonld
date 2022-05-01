@@ -9,33 +9,23 @@
   ],
   "@graph": [
     {
-      "@id": "urn:antwika:auth-api:routes:health",
+      "@id": "urn:antwika:web-api:routes:api-docs",
       "@type": "HttpRoute",
-      "path": "/health",
+      "path": "/api-docs",
       "routes": [
         {
           "@type": "HttpRoute",
-          "path": "/v1",
+          "path": "/swagger.json",
           "endpoint": {
-            "@type": "TextEndpoint",
-            "code": 200,
-            "text": "Health endpoint v1"
-          }
-        },
-        {
-          "@type": "HttpRoute",
-          "path": "/v2",
-          "endpoint": {
-            "@type": "TextEndpoint",
-            "code": 200,
-            "text": "Health endpoint v2"
+            "@type": "OpenApiJsonEndpoint",
+            "appArguments": { "@id": "urn:antwika:app:args" },
+            "template": "assets/swagger.json"
           }
         }
       ],
       "endpoint": {
-        "@type": "TextEndpoint",
-        "code": 200,
-        "text": "Health endpoint"
+        "@type": "SwaggerEndpoint",
+        "appArguments": { "@id": "urn:antwika:app:args" }
       }
     }
   ]

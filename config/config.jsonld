@@ -5,10 +5,12 @@
     "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/app/*/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/common/*/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/http/*/components/context.jsonld",
-    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/prometheus/*/components/context.jsonld"
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/prometheus/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/swagger/*/components/context.jsonld"
   ],
   "import": [
-    "./routes/health/health.jsonld"
+    "./routes/health/health.jsonld",
+    "./routes/api-docs/api-docs.jsonld"
   ],
   "@graph": [
     {
@@ -19,6 +21,27 @@
           "@type": "AppArgument",
           "shortName": "p",
           "longName": "port",
+          "description": "Port description",
+          "value": "3000"
+        },
+        {
+          "@type": "AppArgument",
+          "shortName": "sx",
+          "longName": "swaggerProtocol",
+          "description": "The application protocol",
+          "value": "http"
+        },
+        {
+          "@type": "AppArgument",
+          "shortName": "sh",
+          "longName": "swaggerHost",
+          "description": "The application hostname",
+          "value": "localhost"
+        },
+        {
+          "@type": "AppArgument",
+          "shortName": "sp",
+          "longName": "swaggerPort",
           "description": "Port description",
           "value": "3000"
         }
@@ -44,7 +67,7 @@
               "endpoint": {
                 "@type": "TextEndpoint",
                 "code": 200,
-                "text": "Root endpoint"
+                "text": "Antwika Auth Api"
               }
             },
             {
@@ -56,6 +79,7 @@
               }
             },
             { "@id": "urn:antwika:auth-api:routes:health" },
+            { "@id": "urn:antwika:web-api:routes:api-docs" },
             {
               "@type": "TextEndpoint",
               "code": 404,

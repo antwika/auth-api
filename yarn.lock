@@ -9,7 +9,7 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@antwika/app@0.0.6":
+"@antwika/app@0.0.6", "@antwika/app@^0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.6.tgz#e775aed14900a2305835c21deb4c407ceec6a1e7"
   integrity sha512-PPmz9UVby+9eSdczfDaCX0yiUxX8U7+IPDLPb92zLs1nIe9uEsP2/5VQZ5Haidmv+EkQbNjR4LyJICngAqhdSQ==
@@ -45,6 +45,14 @@
   dependencies:
     "@antwika/http" "0.0.6"
     prom-client "^14.0.1"
+
+"@antwika/swagger@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.3.tgz#b33f686b844aced44067267cfe49080687865830"
+  integrity sha512-ip6QICTUEOyrZZ2aQIpyDmB52S9tsDyxEcmP3b0f7x9mIJxxuUXtiqFUi/anKd/Cq2g0rLSUWcdVzeajGWSWMQ==
+  dependencies:
+    "@antwika/app" "^0.0.6"
+    "@antwika/http" "0.0.7"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7":
   version "7.16.7"
