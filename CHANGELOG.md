@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/antwika/auth-api/compare/v0.0.5...v0.0.6) (2022-05-01)
+
+
+### Features
+
+* use @antwika/swagger ([ba3472b](https://github.com/antwika/auth-api/commit/ba3472b133556747c0b64d295b5fbc62f5650c58))
+
 ### [0.0.5](https://github.com/antwika/auth-api/compare/v0.0.4...v0.0.5) (2022-04-28)
 
 
