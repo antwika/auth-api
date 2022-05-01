@@ -9,7 +9,7 @@
   ],
   "@graph": [
     {
-      "@id": "urn:antwika:web-api:routes:api-docs",
+      "@id": "urn:antwika:auth-api:routes:api-docs",
       "@type": "HttpRoute",
       "path": "/api-docs",
       "routes": [
