@@ -59,13 +59,13 @@
     "@antwika/http" "0.0.6"
     prom-client "^14.0.1"
 
-"@antwika/swagger@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.3.tgz#b33f686b844aced44067267cfe49080687865830"
-  integrity sha512-ip6QICTUEOyrZZ2aQIpyDmB52S9tsDyxEcmP3b0f7x9mIJxxuUXtiqFUi/anKd/Cq2g0rLSUWcdVzeajGWSWMQ==
+"@antwika/swagger@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.4.tgz#15a3305ee42349b7eb6fc17ace1a42f7ddccc9bc"
+  integrity sha512-rUrINqWDDSq0XzyADDkFPCqW0ZacRu5VbEBr7I+dnntiQBKpG3xZJRblsvV7uqAwPb63JW54LhLzaH0xXUheAQ==
   dependencies:
     "@antwika/app" "^0.0.6"
-    "@antwika/http" "0.0.7"
+    "@antwika/http" "0.0.8"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7":
   version "7.16.7"

@@ -47,7 +47,7 @@
     "@antwika/common": "0.0.8",
     "@antwika/http": "0.0.8",
     "@antwika/prometheus": "^0.0.2",
-    "@antwika/swagger": "0.0.3",
+    "@antwika/swagger": "0.0.4",
     "componentsjs": "^5.0.1"
   },
   "files": [
