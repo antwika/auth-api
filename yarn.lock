@@ -28,6 +28,14 @@
   resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.8.tgz#280a50f31fb8b3d6639d8a4f9c5fe616eccce3b2"
   integrity sha512-bqip4ziliimStFun5qbQEYq4apCKUT8ScXY3ULimAcrXt7vwUsCo1rbmihRwOUnABnVYZjxZv7Ke/lT705b7hA==
 
+"@antwika/http@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.10.tgz#63c387f0371f924ae49c5787715ea6d65c0bc8b0"
+  integrity sha512-djcGCD7CFA6He+3i5j7puBwswVE8igezoMZHoQnzTQw2Mr/CNyE1+/xSn5Fmqp7lk3zWL1mWZP9qXit2NEALvw==
+  dependencies:
+    "@antwika/app" "0.0.6"
+    "@antwika/common" "0.0.8"
+
 "@antwika/http@0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.6.tgz#8a0b72b1e060475b47f20642001b812f42892ec5"
@@ -39,14 +47,6 @@
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.8.tgz#1c7f48c31136d741a3cfac89712fa6420a9d3178"
   integrity sha512-6RzCLzT9t0PKp6nEHJZS9MS2TGHIVdHqXjEKOftxFyUnfK2OjaVXVq3nUFUFu0+URcNpeAKSHjmQ+ma2HOWujg==
-  dependencies:
-    "@antwika/app" "0.0.6"
-    "@antwika/common" "0.0.8"
-
-"@antwika/http@0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.9.tgz#10dd1620affb55dd5bc64188d38cc477c5ad11fa"
-  integrity sha512-/jFdz2t/pqjBjt+7jorwJSKFV2C6u3baWQz5wKsyWjqUQinbAOz8Ugi9T1DWmGnZ8/TuFFliPKc903dFH3Ixfg==
   dependencies:
     "@antwika/app" "0.0.6"
     "@antwika/common" "0.0.8"
