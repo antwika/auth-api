@@ -3,6 +3,9 @@
   "name": "@antwika/auth-api",
   "version": "0.0.6",
   "private": false,
+  "engines": {
+    "node": ">=16.15"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/auth-api",
@@ -28,6 +31,7 @@
   "devDependencies": {
     "@types/jest": "27.5.1",
     "@types/node": "17.0.24",
+    "@types/oidc-provider": "^7.11.1",
     "@typescript-eslint/eslint-plugin": "5.23.0",
     "@typescript-eslint/parser": "5.23.0",
     "componentsjs-generator": "3.0.3",
@@ -48,7 +52,8 @@
     "@antwika/http": "0.0.10",
     "@antwika/prometheus": "^0.0.2",
     "@antwika/swagger": "0.0.4",
-    "componentsjs": "^5.0.1"
+    "componentsjs": "^5.0.1",
+    "oidc-provider": "^7.11.1"
   },
   "files": [
     "bin",

@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/componentsjs/^5.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/auth-api/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/app/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/common/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/http/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/prometheus/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/swagger/*/components/context.jsonld"
+  ],
+  "@graph": [
+    {
+      "@id": "urn:antwika:auth-api:routes:.well-known:openid-configuration",
+      "@type": "HttpRoute",
+      "path": "/openid-configuration",
+      "endpoint": {
+        "@type": "OidcEndpoint"
+      }
+    }
+  ]
+}

@@ -9,7 +9,10 @@
     "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/swagger/*/components/context.jsonld"
   ],
   "import": [
+    "./routes/.well-known/.well-known.jsonld",
     "./routes/health/health.jsonld",
+    "./routes/metrics/metrics.jsonld",
+    "./routes/oidc/oidc.jsonld",
     "./routes/api-docs/api-docs.jsonld"
   ],
   "@graph": [
@@ -70,16 +73,11 @@
                 "text": "Antwika Auth Api"
               }
             },
-            {
-              "@type": "HttpRoute",
-              "path": "/metrics",
-              "endpoint": {
-                "@type": "PrometheusHttpHandler",
-                "args_appLabel": "@antwika/auth-api"
-              }
-            },
+            { "@id": "urn:antwika:auth-api:routes:.well-known" },
             { "@id": "urn:antwika:auth-api:routes:health" },
+            { "@id": "urn:antwika:auth-api:routes:metrics" },
             { "@id": "urn:antwika:auth-api:routes:api-docs" },
+            { "@type": "OidcEndpoint" },
             {
               "@type": "TextEndpoint",
               "code": 404,
