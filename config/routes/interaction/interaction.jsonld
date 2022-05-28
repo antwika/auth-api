@@ -9,24 +9,10 @@
   ],
   "@graph": [
     {
-      "@id": "urn:antwika:auth-api:routes:api-docs",
+      "@id": "urn:antwika:auth-api:routes:interaction",
       "@type": "HttpRoute",
-      "paths": ["/api-docs"],
-      "routes": [
-        {
-          "@type": "HttpRoute",
-          "paths": ["/swagger.json"],
-          "endpoint": {
-            "@type": "OpenApiJsonEndpoint",
-            "appArguments": { "@id": "urn:antwika:app:args" },
-            "template": "assets/swagger.json"
-          }
-        }
-      ],
-      "endpoint": {
-        "@type": "SwaggerEndpoint",
-        "appArguments": { "@id": "urn:antwika:app:args" }
-      }
+      "paths": ["/interaction"],
+      "endpoint": { "@id": "urn:antwika:auth-api:endpoints:oidc" }
     }
   ]
 }

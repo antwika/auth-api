@@ -12,8 +12,9 @@
     "./routes/.well-known/.well-known.jsonld",
     "./routes/health/health.jsonld",
     "./routes/metrics/metrics.jsonld",
+    "./routes/api-docs/api-docs.jsonld",
     "./routes/oidc/oidc.jsonld",
-    "./routes/api-docs/api-docs.jsonld"
+    "./routes/interaction/interaction.jsonld"
   ],
   "@graph": [
     {
@@ -66,7 +67,7 @@
           "httpHandlers": [
             {
               "@type": "HttpRoute",
-              "path": "/",
+              "paths": ["/"],
               "endpoint": {
                 "@type": "TextEndpoint",
                 "code": 200,
@@ -77,7 +78,8 @@
             { "@id": "urn:antwika:auth-api:routes:health" },
             { "@id": "urn:antwika:auth-api:routes:metrics" },
             { "@id": "urn:antwika:auth-api:routes:api-docs" },
-            { "@type": "OidcEndpoint" },
+            { "@id": "urn:antwika:auth-api:routes:oidc" },
+            { "@id": "urn:antwika:auth-api:routes:interaction" },
             {
               "@type": "TextEndpoint",
               "code": 404,

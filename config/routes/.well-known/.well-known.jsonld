@@ -9,13 +9,13 @@
     "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/swagger/*/components/context.jsonld"
   ],
   "import": [
-    "./openid-configuration/openid-configuration.jsonld",
+    "./openid-configuration/openid-configuration.jsonld"
   ],
   "@graph": [
     {
       "@id": "urn:antwika:auth-api:routes:.well-known",
       "@type": "HttpRoute",
-      "path": "/.well-known",
+      "paths": ["/.well-known"],
       "routes": [
         { "@id": "urn:antwika:auth-api:routes:.well-known:openid-configuration" }
       ],

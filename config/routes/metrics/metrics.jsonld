@@ -12,7 +12,7 @@
     {
       "@id": "urn:antwika:auth-api:routes:metrics",
       "@type": "HttpRoute",
-      "path": "/metrics",
+      "paths": ["/metrics"],
       "endpoint": {
         "@type": "PrometheusHttpHandler",
         "args_appLabel": "@antwika/auth-api"

@@ -11,27 +11,7 @@
     {
       "@id": "urn:antwika:auth-api:routes:health",
       "@type": "HttpRoute",
-      "path": "/health",
-      "routes": [
-        {
-          "@type": "HttpRoute",
-          "path": "/v1",
-          "endpoint": {
-            "@type": "TextEndpoint",
-            "code": 200,
-            "text": "Health endpoint v1"
-          }
-        },
-        {
-          "@type": "HttpRoute",
-          "path": "/v2",
-          "endpoint": {
-            "@type": "TextEndpoint",
-            "code": 200,
-            "text": "Health endpoint v2"
-          }
-        }
-      ],
+      "paths": ["/health"],
       "endpoint": {
         "@type": "TextEndpoint",
         "code": 200,

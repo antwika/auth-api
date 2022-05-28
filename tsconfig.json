@@ -14,7 +14,8 @@
     "skipLibCheck": true,
     "strict": true,
     "outDir": "./dist",
-    "types": ["jest", "node", "@types/jest"]
+    "types": ["jest", "node", "@types/jest"],
+    "resolveJsonModule": true,
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules", "dist", "test"]

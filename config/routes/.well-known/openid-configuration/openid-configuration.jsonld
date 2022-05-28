@@ -12,10 +12,8 @@
     {
       "@id": "urn:antwika:auth-api:routes:.well-known:openid-configuration",
       "@type": "HttpRoute",
-      "path": "/openid-configuration",
-      "endpoint": {
-        "@type": "OidcEndpoint"
-      }
+      "paths": ["/openid-configuration"],
+      "endpoint": { "@id": "urn:antwika:auth-api:endpoints:oidc" }
     }
   ]
 }
