@@ -50,12 +50,13 @@
     "@antwika/app" "0.0.6"
     "@antwika/common" "0.0.8"
 
-"@antwika/http@0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.6.tgz#8a0b72b1e060475b47f20642001b812f42892ec5"
-  integrity sha512-uIKIAqKeeJWAzCIjV1aaXCg7Sv9yeAK3eccbvBS1/9Uu2yY5XR9ovYBlwoeJct6PPAy6PDbIfEEF8yWQTI+sgA==
+"@antwika/http@0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.11.tgz#9a2144f4815c5800430fcb60f37f625df02872cf"
+  integrity sha512-PryP3x8flSispZAQQk491U4MXgdozP1+MEH9eUXaR+x26w43SnFyBjTniTdHckoVk1PwmkbrnRxMp7inN1ZUsA==
   dependencies:
-    "@antwika/common" "0.0.7"
+    "@antwika/app" "0.0.7"
+    "@antwika/common" "0.0.9"
 
 "@antwika/http@0.0.8":
   version "0.0.8"
@@ -65,12 +66,12 @@
     "@antwika/app" "0.0.6"
     "@antwika/common" "0.0.8"
 
-"@antwika/prometheus@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@antwika/prometheus/-/prometheus-0.0.2.tgz#944046f21272141398cbc40a1c60f554afa10507"
-  integrity sha512-PedqxqYNB9Xvbf09aZP1OHzdCsL8lsHFUB8TgyLSfTGmMNh9QkVReTBYtubzGaf+5Kg5F7JyWyJvson+ElkKDw==
+"@antwika/prometheus@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@antwika/prometheus/-/prometheus-0.0.3.tgz#0b3cf6af5f935afb98ae62ecdc825acb9028bc52"
+  integrity sha512-HBKaDAuQeJOk6AdoEnRl9lZC+6TjfwhNU0Ov9ZSeRershzy8xV9cKpHDqh55zv1Hlnp+3oPtJNWfUJTB5hYaGw==
   dependencies:
-    "@antwika/http" "0.0.6"
+    "@antwika/http" "0.0.11"
     prom-client "^14.0.1"
 
 "@antwika/swagger@0.0.4":
