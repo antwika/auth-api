@@ -9,16 +9,7 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@antwika/app@0.0.6", "@antwika/app@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.6.tgz#e775aed14900a2305835c21deb4c407ceec6a1e7"
-  integrity sha512-PPmz9UVby+9eSdczfDaCX0yiUxX8U7+IPDLPb92zLs1nIe9uEsP2/5VQZ5Haidmv+EkQbNjR4LyJICngAqhdSQ==
-  dependencies:
-    "@antwika/common" "0.0.7"
-    componentsjs "^5.0.1"
-    yargs "^17.4.1"
-
-"@antwika/app@0.0.7":
+"@antwika/app@0.0.7", "@antwika/app@^0.0.7":
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.7.tgz#8c077471bd8df5f702035cf44439b8f371c1ebfc"
   integrity sha512-VGKg0RF397ioo0hgkWykovhcr2KLbJcQ4jmUUpLm0jvcS1J4J54WDrTXiL/xljhh4lXSrFXbFzY62CEHcUAMOQ==
@@ -26,16 +17,6 @@
     "@antwika/common" "0.0.9"
     componentsjs "^5.0.1"
     yargs "^17.4.1"
-
-"@antwika/common@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.7.tgz#dd3a0180dca4d1dc0a10b1c406dd2fbf42e9c3f5"
-  integrity sha512-mDGwrD2oZvI9wAuWZkg2tgpeXA444xDawk/9Y5HNeD4U8TyEHmHYnDXiqLX9p4mhEil4fTFT33aVdKjJdJXonQ==
-
-"@antwika/common@0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.8.tgz#280a50f31fb8b3d6639d8a4f9c5fe616eccce3b2"
-  integrity sha512-bqip4ziliimStFun5qbQEYq4apCKUT8ScXY3ULimAcrXt7vwUsCo1rbmihRwOUnABnVYZjxZv7Ke/lT705b7hA==
 
 "@antwika/common@0.0.9":
   version "0.0.9"
@@ -50,14 +31,6 @@
     "@antwika/app" "0.0.7"
     "@antwika/common" "0.0.9"
 
-"@antwika/http@0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.8.tgz#1c7f48c31136d741a3cfac89712fa6420a9d3178"
-  integrity sha512-6RzCLzT9t0PKp6nEHJZS9MS2TGHIVdHqXjEKOftxFyUnfK2OjaVXVq3nUFUFu0+URcNpeAKSHjmQ+ma2HOWujg==
-  dependencies:
-    "@antwika/app" "0.0.6"
-    "@antwika/common" "0.0.8"
-
 "@antwika/prometheus@^0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@antwika/prometheus/-/prometheus-0.0.3.tgz#0b3cf6af5f935afb98ae62ecdc825acb9028bc52"
@@ -66,13 +39,13 @@
     "@antwika/http" "0.0.11"
     prom-client "^14.0.1"
 
-"@antwika/swagger@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.4.tgz#15a3305ee42349b7eb6fc17ace1a42f7ddccc9bc"
-  integrity sha512-rUrINqWDDSq0XzyADDkFPCqW0ZacRu5VbEBr7I+dnntiQBKpG3xZJRblsvV7uqAwPb63JW54LhLzaH0xXUheAQ==
+"@antwika/swagger@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.5.tgz#84eab15a23935540ce9a883fc6857d014473738d"
+  integrity sha512-9mQjPU/qKSWCECqI1t+2I9HoBOzzgkTIKITGUTW5i6h+MNjdDLWdok0Z+xfJr6zlCiWvO1W0J2v+yYvm9SPqnA==
   dependencies:
-    "@antwika/app" "^0.0.6"
-    "@antwika/http" "0.0.8"
+    "@antwika/app" "^0.0.7"
+    "@antwika/http" "0.0.11"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7":
   version "7.16.7"
