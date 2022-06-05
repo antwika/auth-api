@@ -1,7 +1,10 @@
 import { randomUUID } from 'crypto';
 import { Provider, Configuration } from 'oidc-provider';
-import { Account } from './Account';
+import { IAccountProvider } from './AccountProvider';
+import { ClientProvider } from './ClientProvider';
+import { CookiesProvider } from './CookiesProvider';
 import { IJwksProvider } from './JwksProvider';
+import { ResourceIndicatorProvider } from './ResourceIndicatorProvider';
 
 export interface IOidcProvider {
   getProvider: () => Promise<Provider>
@@ -14,9 +17,28 @@ export class OidcProvider implements IOidcProvider {
 
   private readonly jwksProvider;
 
-  constructor(baseUrl: string, jwksProvider: IJwksProvider) {
+  private readonly accountProvider;
+
+  private readonly clientProvider;
+
+  private readonly resourceIndicatorProvider;
+
+  private readonly cookiesProvider;
+
+  constructor(
+    baseUrl: string,
+    jwksProvider: IJwksProvider,
+    accountProvider: IAccountProvider,
+    clientProvider: ClientProvider,
+    resourceIndicatorProvider: ResourceIndicatorProvider,
+    cookiesProvider: CookiesProvider,
+  ) {
     this.baseUrl = baseUrl;
     this.jwksProvider = jwksProvider;
+    this.accountProvider = accountProvider;
+    this.clientProvider = clientProvider;
+    this.resourceIndicatorProvider = resourceIndicatorProvider;
+    this.cookiesProvider = cookiesProvider;
   }
 
   async getProvider() {
@@ -25,22 +47,8 @@ export class OidcProvider implements IOidcProvider {
     }
 
     const configuration: Configuration = {
-      clients: [
-        {
-          client_id: 'web',
-          client_secret: 'app',
-          grant_types: ['authorization_code'],
-          response_types: ['code'],
-          redirect_uris: [
-            'http://localhost:3000/oidc/cb',
-            'http://localhost:3000/en-US/oidc/cb',
-            'http://localhost:3000/sv-SE/oidc/cb',
-            'http://localhost:3000/ko-KR/oidc/cb',
-          ],
-          scope: 'openid',
-          introspection_signed_response_alg: 'ES256',
-        },
-      ],
+      cookies: await this.cookiesProvider.getCookies(),
+      clients: await this.clientProvider.findAllClientMetadata(),
       conformIdTokenClaims: false,
       pkce: {
         methods: ['S256'],
@@ -56,19 +64,17 @@ export class OidcProvider implements IOidcProvider {
       clientBasedCORS: (ctx, origin, client) => {
         return origin === `http://${process.env.VITE_IP}:${process.env.VITE_PORT}`
       }, */
-      findAccount: Account.findAccount,
+      findAccount: (ctx: any, id: string) => this.accountProvider.findAccount(id),
       // eslint-disable-next-line arrow-body-style
       extraTokenClaims: async (ctx, token) => {
         if (token.kind === 'AccessToken') {
-          const account = await Account.findAccount(ctx, token.accountId);
-          if (!account) return undefined;
-
+          const account = await this.accountProvider.findAccount(token.accountId);
           const claims = await account.claims();
-          return ({
+          return {
             firstName: claims.firstName,
             lastName: claims.lastName,
             email: claims.email,
-          });
+          };
         }
         return undefined;
       },
@@ -77,16 +83,16 @@ export class OidcProvider implements IOidcProvider {
         userinfo: { enabled: false },
         resourceIndicators: {
           enabled: true,
-          defaultResource: (ctx) => 'http://localhost:3000',
-          getResourceServerInfo: (ctx, resourceIndicator, client) => ({
-            scope: 'openid',
-            audience: 'web',
-            accessTokenTTL: 2 * 60 * 60, // 2 hours
-            accessTokenFormat: 'jwt',
-            jwt: {
-              sign: { alg: 'ES256' },
-            },
-          }),
+          defaultResource: async (ctx) => this.resourceIndicatorProvider.getDefaultResource(ctx),
+          getResourceServerInfo: async (
+            ctx,
+            resourceIndicator,
+            client,
+          ) => this.resourceIndicatorProvider.getResourceServerInfo(
+            ctx,
+            resourceIndicator,
+            client,
+          ),
         },
         registration: {
           enabled: true,

@@ -1,3 +1,5 @@
+import { Data, IStore } from '@antwika/store';
+import { randomUUID } from 'crypto';
 import {
   exportJWK,
   generateKeyPair,
@@ -5,49 +7,49 @@ import {
   KeyLike,
 } from 'jose';
 
+export type KeyPair = Data & {
+  privateKey: KeyLike,
+  publicKey: KeyLike,
+  privateJwk: JWK,
+  publicJwk: JWK,
+};
+
 export interface IJwksProvider {
-  getKeys: () => Promise<{
-    privateKey: KeyLike,
-    publicKey: KeyLike,
-    privateJwk: JWK,
-    publicJwk: JWK,
-  }>;
+  getKeys: () => Promise<KeyPair[]>;
   getJwks: () => Promise<{ keys: JWK[]}>;
 }
 
 export class JwksProvider implements IJwksProvider {
-  private privateKey: KeyLike | undefined;
+  private readonly store: IStore;
 
-  private publicKey: KeyLike | undefined;
-
-  private privateJwk: JWK | undefined;
-
-  private publicJwk: JWK | undefined;
+  constructor(store: IStore) {
+    this.store = store;
+  }
 
   async getKeys() {
-    if (!this.privateKey || !this.publicKey || !this.privateJwk || !this.publicJwk) {
-      const { privateKey, publicKey } = await generateKeyPair('ES256');
-      this.privateKey = privateKey;
-      this.publicKey = publicKey;
-      this.privateJwk = await exportJWK(privateKey);
-      this.privateJwk.alg = 'ES256';
-      this.privateJwk.use = 'sig';
-      this.publicJwk = await exportJWK(publicKey);
-      this.publicJwk.alg = 'ES256';
-      this.publicJwk.use = 'sig';
+    const result = await this.store.readAll<KeyPair>();
+
+    if (result.length > 0) {
+      const keyPair = result; // TODO: What if there are many keys?
+      return keyPair;
     }
 
-    return {
-      privateKey: this.privateKey,
-      publicKey: this.publicKey,
-      privateJwk: this.privateJwk,
-      publicJwk: this.publicJwk,
+    const { privateKey, publicKey } = await generateKeyPair('ES256');
+    const keyPair: KeyPair = {
+      id: randomUUID(),
+      privateKey,
+      publicKey,
+      privateJwk: { ...await exportJWK(privateKey), alg: 'ES256', use: 'sig' },
+      publicJwk: { ...await exportJWK(publicKey), alg: 'ES256', use: 'sig' },
     };
+
+    return [await this.store.create(keyPair)];
   }
 
   async getJwks(): Promise<{ keys: JWK[]}> {
-    const { privateJwk } = await this.getKeys();
-    const jwks = { keys: [{ ...privateJwk }] };
+    const keyPairs = await this.getKeys();
+    const keys = keyPairs.map((keyPair) => ({ ...keyPair.privateJwk }));
+    const jwks = { keys };
     return jwks;
   }
 }

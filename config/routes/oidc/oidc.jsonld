@@ -5,7 +5,8 @@
     "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/app/*/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/common/*/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/http/*/components/context.jsonld",
-    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/swagger/*/components/context.jsonld"
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/swagger/*/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@antwika/store/*/components/context.jsonld"
   ],
   "@graph": [
     {
@@ -19,7 +20,34 @@
           "@type": "OidcProvider",
           "baseUrl": "http://localhost:3000",
           "jwksProvider": {
-            "@type": "JwksProvider"
+            "@type": "JwksProvider",
+            "store": {
+              "@type": "MemoryStore"
+            }
+          },
+          "accountProvider": {
+            "@type": "AccountProvider",
+            "store": {
+              "@type": "MemoryStore"
+            }
+          },
+          "clientProvider": {
+            "@type": "ClientProvider",
+            "store": {
+              "@type": "MemoryStore"
+            }
+          },
+          "resourceIndicatorProvider": {
+            "@type": "ResourceIndicatorProvider",
+            "store": {
+              "@type": "MemoryStore"
+            }
+          },
+          "cookiesProvider": {
+            "@type": "CookiesProvider",
+            "store": {
+              "@type": "MemoryStore"
+            }
           }
         }
       }
