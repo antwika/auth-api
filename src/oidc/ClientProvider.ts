@@ -22,23 +22,6 @@ export class ClientProvider implements IClientProvider {
 
   constructor(store: IStore) {
     this.store = store;
-
-    // TODO: Avoid hard-coding stuff
-    this.store.create<IClient>({
-      id: randomUUID(),
-      client_id: 'web',
-      client_secret: 'app',
-      grant_types: ['authorization_code'],
-      response_types: ['code'],
-      redirect_uris: [
-        'http://localhost:3000/oidc/cb',
-        'http://localhost:3000/en-US/oidc/cb',
-        'http://localhost:3000/sv-SE/oidc/cb',
-        'http://localhost:3000/ko-KR/oidc/cb',
-      ],
-      scope: 'openid',
-      introspection_signed_response_alg: 'ES256',
-    });
   }
 
   async findClient(id: string) {

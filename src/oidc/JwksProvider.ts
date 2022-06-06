@@ -8,8 +8,6 @@ import {
 } from 'jose';
 
 export type KeyPair = Data & {
-  privateKey: KeyLike,
-  publicKey: KeyLike,
   privateJwk: JWK,
   publicJwk: JWK,
 };
@@ -37,8 +35,6 @@ export class JwksProvider implements IJwksProvider {
     const { privateKey, publicKey } = await generateKeyPair('ES256');
     const keyPair: KeyPair = {
       id: randomUUID(),
-      privateKey,
-      publicKey,
       privateJwk: { ...await exportJWK(privateKey), alg: 'ES256', use: 'sig' },
       publicJwk: { ...await exportJWK(publicKey), alg: 'ES256', use: 'sig' },
     };

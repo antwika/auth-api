@@ -22,18 +22,6 @@ export class ResourceIndicatorProvider implements IResourceIndicatorProvider {
 
   constructor(store: IStore) {
     this.store = store;
-
-    // TODO: Avoid hard-coding stuff
-    this.store.create<IResourceServerInfo>({
-      id: randomUUID(),
-      scope: 'openid',
-      audience: 'web',
-      accessTokenTTL: 2 * 60 * 60, // 2 hours
-      accessTokenFormat: 'jwt',
-      jwt: {
-        sign: { alg: 'ES256' },
-      },
-    });
   }
 
   async getDefaultResource(ctx: any) {

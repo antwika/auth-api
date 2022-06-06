@@ -24,15 +24,6 @@ export class AccountProvider implements IAccountProvider {
 
   constructor(store: IStore) {
     this.store = store;
-
-    // TODO: Avoid hard-coding stuff
-    this.store.create<IAccount>({
-      id: 'JohnTheDoe',
-      email: 'john@doe.com',
-      password: 'doe',
-      firstName: 'John',
-      lastName: 'Doe',
-    });
   }
 
   async findAccount(id: string) {
