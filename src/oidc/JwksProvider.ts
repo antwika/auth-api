@@ -1,11 +1,6 @@
 import { Data, IStore } from '@antwika/store';
 import { randomUUID } from 'crypto';
-import {
-  exportJWK,
-  generateKeyPair,
-  JWK,
-  KeyLike,
-} from 'jose';
+import { exportJWK, generateKeyPair, JWK } from 'jose';
 
 export type KeyPair = Data & {
   privateJwk: JWK,
@@ -25,11 +20,10 @@ export class JwksProvider implements IJwksProvider {
   }
 
   async getKeys() {
-    const result = await this.store.readAll<KeyPair>();
+    const keyPairs = await this.store.readAll<KeyPair>();
 
-    if (result.length > 0) {
-      const keyPair = result; // TODO: What if there are many keys?
-      return keyPair;
+    if (keyPairs.length > 0) {
+      return keyPairs;
     }
 
     const { privateKey, publicKey } = await generateKeyPair('ES256');
@@ -45,7 +39,6 @@ export class JwksProvider implements IJwksProvider {
   async getJwks(): Promise<{ keys: JWK[]}> {
     const keyPairs = await this.getKeys();
     const keys = keyPairs.map((keyPair) => ({ ...keyPair.privateJwk }));
-    const jwks = { keys };
-    return jwks;
+    return { keys };
   }
 }

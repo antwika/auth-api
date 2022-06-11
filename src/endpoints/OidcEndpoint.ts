@@ -15,7 +15,6 @@ export class OidcEndpoint implements IHttpHandler {
   async handle(handlable: IHttpHandlable) {
     const req = handlable.req();
     const res = handlable.res();
-    // await new Promise((resolve) => { setTimeout(() => resolve(true), 100); });
     const provider = await this.oidcProvider.getProvider();
     const callback = provider.callback();
     return callback(req, res);

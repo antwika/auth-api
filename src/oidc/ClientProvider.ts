@@ -1,6 +1,4 @@
 import { Data, IStore } from '@antwika/store';
-import { randomUUID } from 'crypto';
-import { ClientMetadata } from 'oidc-provider';
 
 export interface IClient extends Data {
   client_id: string,
@@ -30,8 +28,7 @@ export class ClientProvider implements IClientProvider {
   }
 
   async findClient(id: string) {
-    const client = await this.store.read<IClient>(id);
-    return client;
+    return this.store.read<IClient>(id);
   }
 
   async findAllClients() {

@@ -1,6 +1,5 @@
 import { Data, IStore } from '@antwika/store';
-import { randomUUID } from 'crypto';
-import { ClientMetadata, ResourceServer } from 'oidc-provider';
+import { ResourceServer } from 'oidc-provider';
 
 export interface IResourceServerInfo extends Data {
   scope: string,
@@ -37,11 +36,11 @@ export class ResourceIndicatorProvider implements IResourceIndicatorProvider {
     return this.store.create(resourceServerInfo);
   }
 
-  async getDefaultResource(ctx: any) {
+  async getDefaultResource(_ctx: any) {
     return 'http://localhost:3000';
   }
 
-  async getResourceServerInfo(ctx: any, resourceIndicator: string, client: any) {
+  async getResourceServerInfo(_ctx: any, _resourceIndicator: string, client: any) {
     const all = await this.store.readAll<IResourceServerInfo>();
     const found = all.filter((a) => a.audience === client.clientId);
     if (found.length === 0) throw new Error('Did not find any suitable resource server info');

@@ -53,7 +53,7 @@ export class ConfigurationProvider implements IConfigurationProvider {
         required: () => true,
       },
       interactions: {
-        url(ctx: any, interaction: any) {
+        url(_ctx: any, interaction: any) {
           return `/oidc/interaction/${interaction.uid}`;
         },
       },
@@ -62,9 +62,9 @@ export class ConfigurationProvider implements IConfigurationProvider {
       clientBasedCORS: (ctx, origin, client) => {
         return origin === `http://${process.env.VITE_IP}:${process.env.VITE_PORT}`
       }, */
-      findAccount: (ctx: any, id: string) => this.accountProvider.findAccount(id),
+      findAccount: (_ctx: any, id: string) => this.accountProvider.findAccount(id),
       // eslint-disable-next-line arrow-body-style
-      extraTokenClaims: async (ctx: any, token: any) => {
+      extraTokenClaims: async (_ctx: any, token: any) => {
         if (token.kind === 'AccessToken') {
           const account = await this.accountProvider.findAccount(token.accountId);
           const claims = await account.claims();
@@ -95,7 +95,7 @@ export class ConfigurationProvider implements IConfigurationProvider {
         registration: {
           enabled: true,
           initialAccessToken: false,
-          idFactory: (ctx) => randomUUID(),
+          idFactory: (_ctx) => randomUUID(),
         },
         dPoP: {
           enabled: true,
