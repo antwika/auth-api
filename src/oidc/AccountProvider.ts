@@ -8,6 +8,15 @@ export interface IAccount extends Data {
 }
 
 export interface IAccountProvider {
+  registerAccount: (account: IAccount) => Promise<{
+    accountId: string,
+    claims: () => Promise<{
+      sub: string,
+      email: string,
+      firstName: string,
+      lastName: string,
+    }>,
+  }>,
   findAccount: (id: string) => Promise<{
     accountId: string,
     claims: () => Promise<{
@@ -24,6 +33,19 @@ export class AccountProvider implements IAccountProvider {
 
   constructor(store: IStore) {
     this.store = store;
+  }
+
+  async registerAccount(account: IAccount) {
+    const created = await this.store.create<IAccount>(account);
+    return {
+      accountId: created.id,
+      claims: async () => ({
+        sub: created.id,
+        email: created.email,
+        firstName: created.firstName,
+        lastName: created.lastName,
+      }),
+    };
   }
 
   async findAccount(id: string) {

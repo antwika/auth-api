@@ -3,12 +3,16 @@ import { randomBytes, randomUUID } from 'crypto';
 
 type CookieKey = Data & { secret: string };
 
-export interface ICookieProvider {
-  getCookieKeys: () => Promise<CookieKey[]>;
-  getCookies: () => Promise<any>;
+export interface ICookiesProvider {
+  getCookieKeys: () => Promise<string[]>;
+  getCookies: () => Promise<{
+    long: { signed: boolean, maxAge: number },
+    short: { signed: boolean },
+    keys: string[],
+  }>;
 }
 
-export class CookiesProvider {
+export class CookiesProvider implements ICookiesProvider {
   private readonly store: IStore;
 
   constructor(store: IStore) {

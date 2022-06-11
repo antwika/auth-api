@@ -13,6 +13,7 @@ export interface IClient extends Data {
 }
 
 export interface IClientProvider {
+  registerClient: (client: IClient) => Promise<IClient>,
   findClient: (id: string) => Promise<IClient>,
   findAllClients: () => Promise<IClient[]>,
 }
@@ -24,6 +25,10 @@ export class ClientProvider implements IClientProvider {
     this.store = store;
   }
 
+  async registerClient(client: IClient) {
+    return this.store.create<IClient>(client);
+  }
+
   async findClient(id: string) {
     const client = await this.store.read<IClient>(id);
     return client;
@@ -31,10 +36,5 @@ export class ClientProvider implements IClientProvider {
 
   async findAllClients() {
     return this.store.readAll<IClient>();
-  }
-
-  async findAllClientMetadata() {
-    const allClients = await this.findAllClients();
-    return allClients as unknown as ClientMetadata[];
   }
 }

@@ -15,6 +15,15 @@ export interface IResourceServerInfo extends Data {
 }
 
 export interface IResourceIndicatorProvider {
+  registerResourceServerInfo: (
+    resourceServerInfo: IResourceServerInfo,
+  ) => Promise<IResourceServerInfo>,
+  getDefaultResource: (ctx: any) => Promise<string>,
+  getResourceServerInfo: (
+    ctx: any,
+    resourceIndicator: string,
+    client: any,
+  ) => Promise<ResourceServer>,
 }
 
 export class ResourceIndicatorProvider implements IResourceIndicatorProvider {
@@ -22,6 +31,10 @@ export class ResourceIndicatorProvider implements IResourceIndicatorProvider {
 
   constructor(store: IStore) {
     this.store = store;
+  }
+
+  async registerResourceServerInfo(resourceServerInfo: IResourceServerInfo) {
+    return this.store.create(resourceServerInfo);
   }
 
   async getDefaultResource(ctx: any) {
