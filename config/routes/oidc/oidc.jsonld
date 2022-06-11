@@ -18,72 +18,76 @@
         "@type": "OidcEndpoint",
         "oidcProvider": {
           "@type": "OidcProvider",
-          "baseUrl": { "@id": "urn:antwika:app:args:APP_BASE_URL", "@type": "Variable" },
-          "jwksProvider": {
-            "@type": "JwksProvider",
-            "store": {
-              "@type": "MongoDbStore",
-              "protocol": { "@id": "urn:antwika:app:args:APP_DB_PROTOCOL", "@type": "Variable" },
-              "username": { "@id": "urn:antwika:app:args:APP_DB_USER", "@type": "Variable" },
-              "password": { "@id": "urn:antwika:app:args:APP_DB_PASS", "@type": "Variable" },
-              "cluster": { "@id": "urn:antwika:app:args:APP_DB_CLUSTER", "@type": "Variable" },
-              "database": { "@id": "urn:antwika:app:args:APP_DB_NAME", "@type": "Variable" },
-              "flags": { "@id": "urn:antwika:app:args:APP_DB_FLAGS", "@type": "Variable" },
-              "collection": "jwks"
+          "configurationProvider": {
+            "@type": "ConfigurationProvider",
+            "baseUrl": { "@id": "urn:antwika:app:args:APP_BASE_URL", "@type": "Variable" },
+            "jwksProvider": {
+              "@type": "JwksProvider",
+              "store": {
+                "@type": "MongoDbStore",
+                "protocol": { "@id": "urn:antwika:app:args:APP_DB_PROTOCOL", "@type": "Variable" },
+                "username": { "@id": "urn:antwika:app:args:APP_DB_USER", "@type": "Variable" },
+                "password": { "@id": "urn:antwika:app:args:APP_DB_PASS", "@type": "Variable" },
+                "cluster": { "@id": "urn:antwika:app:args:APP_DB_CLUSTER", "@type": "Variable" },
+                "database": { "@id": "urn:antwika:app:args:APP_DB_NAME", "@type": "Variable" },
+                "flags": { "@id": "urn:antwika:app:args:APP_DB_FLAGS", "@type": "Variable" },
+                "collection": "jwks"
+              }
+            },
+            "accountProvider": {
+              "@type": "AccountProvider",
+              "store": {
+                "@type": "MongoDbStore",
+                "protocol": { "@id": "urn:antwika:app:args:APP_DB_PROTOCOL", "@type": "Variable" },
+                "username": { "@id": "urn:antwika:app:args:APP_DB_USER", "@type": "Variable" },
+                "password": { "@id": "urn:antwika:app:args:APP_DB_PASS", "@type": "Variable" },
+                "cluster": { "@id": "urn:antwika:app:args:APP_DB_CLUSTER", "@type": "Variable" },
+                "database": { "@id": "urn:antwika:app:args:APP_DB_NAME", "@type": "Variable" },
+                "flags": { "@id": "urn:antwika:app:args:APP_DB_FLAGS", "@type": "Variable" },
+                "collection": "accounts"
+              }
+            },
+            "clientProvider": {
+              "@type": "ClientProvider",
+              "store": {
+                "@type": "MongoDbStore",
+                "protocol": { "@id": "urn:antwika:app:args:APP_DB_PROTOCOL", "@type": "Variable" },
+                "username": { "@id": "urn:antwika:app:args:APP_DB_USER", "@type": "Variable" },
+                "password": { "@id": "urn:antwika:app:args:APP_DB_PASS", "@type": "Variable" },
+                "cluster": { "@id": "urn:antwika:app:args:APP_DB_CLUSTER", "@type": "Variable" },
+                "database": { "@id": "urn:antwika:app:args:APP_DB_NAME", "@type": "Variable" },
+                "flags": { "@id": "urn:antwika:app:args:APP_DB_FLAGS", "@type": "Variable" },
+                "collection": "clients"
+              }
+            },
+            "resourceIndicatorProvider": {
+              "@type": "ResourceIndicatorProvider",
+              "store": {
+                "@type": "MongoDbStore",
+                "protocol": { "@id": "urn:antwika:app:args:APP_DB_PROTOCOL", "@type": "Variable" },
+                "username": { "@id": "urn:antwika:app:args:APP_DB_USER", "@type": "Variable" },
+                "password": { "@id": "urn:antwika:app:args:APP_DB_PASS", "@type": "Variable" },
+                "cluster": { "@id": "urn:antwika:app:args:APP_DB_CLUSTER", "@type": "Variable" },
+                "database": { "@id": "urn:antwika:app:args:APP_DB_NAME", "@type": "Variable" },
+                "flags": { "@id": "urn:antwika:app:args:APP_DB_FLAGS", "@type": "Variable" },
+                "collection": "resources.servers.infos"
+              }
+            },
+            "cookiesProvider": {
+              "@type": "CookiesProvider",
+              "store": {
+                "@type": "MongoDbStore",
+                "protocol": { "@id": "urn:antwika:app:args:APP_DB_PROTOCOL", "@type": "Variable" },
+                "username": { "@id": "urn:antwika:app:args:APP_DB_USER", "@type": "Variable" },
+                "password": { "@id": "urn:antwika:app:args:APP_DB_PASS", "@type": "Variable" },
+                "cluster": { "@id": "urn:antwika:app:args:APP_DB_CLUSTER", "@type": "Variable" },
+                "database": { "@id": "urn:antwika:app:args:APP_DB_NAME", "@type": "Variable" },
+                "flags": { "@id": "urn:antwika:app:args:APP_DB_FLAGS", "@type": "Variable" },
+                "collection": "cookies.keys"
+              }
             }
           },
-          "accountProvider": {
-            "@type": "AccountProvider",
-            "store": {
-              "@type": "MongoDbStore",
-              "protocol": { "@id": "urn:antwika:app:args:APP_DB_PROTOCOL", "@type": "Variable" },
-              "username": { "@id": "urn:antwika:app:args:APP_DB_USER", "@type": "Variable" },
-              "password": { "@id": "urn:antwika:app:args:APP_DB_PASS", "@type": "Variable" },
-              "cluster": { "@id": "urn:antwika:app:args:APP_DB_CLUSTER", "@type": "Variable" },
-              "database": { "@id": "urn:antwika:app:args:APP_DB_NAME", "@type": "Variable" },
-              "flags": { "@id": "urn:antwika:app:args:APP_DB_FLAGS", "@type": "Variable" },
-              "collection": "accounts"
-            }
-          },
-          "clientProvider": {
-            "@type": "ClientProvider",
-            "store": {
-              "@type": "MongoDbStore",
-              "protocol": { "@id": "urn:antwika:app:args:APP_DB_PROTOCOL", "@type": "Variable" },
-              "username": { "@id": "urn:antwika:app:args:APP_DB_USER", "@type": "Variable" },
-              "password": { "@id": "urn:antwika:app:args:APP_DB_PASS", "@type": "Variable" },
-              "cluster": { "@id": "urn:antwika:app:args:APP_DB_CLUSTER", "@type": "Variable" },
-              "database": { "@id": "urn:antwika:app:args:APP_DB_NAME", "@type": "Variable" },
-              "flags": { "@id": "urn:antwika:app:args:APP_DB_FLAGS", "@type": "Variable" },
-              "collection": "clients"
-            }
-          },
-          "resourceIndicatorProvider": {
-            "@type": "ResourceIndicatorProvider",
-            "store": {
-              "@type": "MongoDbStore",
-              "protocol": { "@id": "urn:antwika:app:args:APP_DB_PROTOCOL", "@type": "Variable" },
-              "username": { "@id": "urn:antwika:app:args:APP_DB_USER", "@type": "Variable" },
-              "password": { "@id": "urn:antwika:app:args:APP_DB_PASS", "@type": "Variable" },
-              "cluster": { "@id": "urn:antwika:app:args:APP_DB_CLUSTER", "@type": "Variable" },
-              "database": { "@id": "urn:antwika:app:args:APP_DB_NAME", "@type": "Variable" },
-              "flags": { "@id": "urn:antwika:app:args:APP_DB_FLAGS", "@type": "Variable" },
-              "collection": "resources.servers.infos"
-            }
-          },
-          "cookiesProvider": {
-            "@type": "CookiesProvider",
-            "store": {
-              "@type": "MongoDbStore",
-              "protocol": { "@id": "urn:antwika:app:args:APP_DB_PROTOCOL", "@type": "Variable" },
-              "username": { "@id": "urn:antwika:app:args:APP_DB_USER", "@type": "Variable" },
-              "password": { "@id": "urn:antwika:app:args:APP_DB_PASS", "@type": "Variable" },
-              "cluster": { "@id": "urn:antwika:app:args:APP_DB_CLUSTER", "@type": "Variable" },
-              "database": { "@id": "urn:antwika:app:args:APP_DB_NAME", "@type": "Variable" },
-              "flags": { "@id": "urn:antwika:app:args:APP_DB_FLAGS", "@type": "Variable" },
-              "collection": "cookies.keys"
-            }
-          }
+          "baseUrl": { "@id": "urn:antwika:app:args:APP_BASE_URL", "@type": "Variable" }
         }
       }
     }

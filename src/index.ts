@@ -7,3 +7,5 @@ export * from './oidc/AccountProvider';
 export * from './oidc/ClientProvider';
 export * from './oidc/ResourceIndicatorProvider';
 export * from './oidc/CookiesProvider';
+export * from './oidc/ClientProvider';
+export * from './oidc/ConfigurationProvider';
