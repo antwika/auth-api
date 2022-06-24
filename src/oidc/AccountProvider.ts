@@ -26,6 +26,7 @@ export interface IAccountProvider {
       lastName: string,
     }>,
   }>,
+  authenticate: (id: string, password: string) => Promise<boolean>,
 }
 
 export class AccountProvider implements IAccountProvider {
@@ -59,5 +60,13 @@ export class AccountProvider implements IAccountProvider {
         lastName: account.lastName,
       }),
     };
+  }
+
+  async authenticate(id: string, password: string) {
+    const account = await this.store.read<IAccount>(id);
+    if (account.password === password) {
+      return true;
+    }
+    return false;
   }
 }
