@@ -19,3 +19,9 @@
 | **APP_DB_CLUSTER** | `my.cluster.mongodb.net` | MongoDB database cluster host |
 | **APP_DB_NAME** | `my-app-db` | MongoDB database name |
 | **APP_DB_FLAGS** | `retryWrites=true&w=majority` | MongoDB connection options (can be left as an empty `string`) |
+
+## Run locally
+
+```
+$ yarn build && PORT=4000 APP_BASE_URL=http://localhost:4000 APP_DB_PROTOCOL=mongodb APP_DB_CLUSTER=localhost:27017 APP_DB_NAME=auth-api APP_DB_USER= APP_DB_PASS= APP_DB_FLAGS= yarn start
+```
