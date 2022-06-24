@@ -30,5 +30,8 @@ describe('AccountProvider', () => {
     const foundAccount = await accountProvider.findAccount(registeredAccount.accountId);
     expect(foundAccount.accountId).toBe(registeredAccount.accountId);
     expect(await foundAccount.claims()).toStrictEqual(await registeredAccount.claims());
+
+    await expect(accountProvider.authenticate('FooBar', 'testpass')).resolves.toBeTruthy();
+    await expect(accountProvider.authenticate('FooBar', 'wrongpass')).resolves.toBeFalsy();
   });
 });

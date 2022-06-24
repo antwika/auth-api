@@ -23,6 +23,7 @@ describe('ConfigurationProvider', () => {
     mockAccountProvider = {
       registerAccount: jest.fn(),
       findAccount: jest.fn(),
+      authenticate: jest.fn(),
     };
     mockClientProvider = {
       registerClient: jest.fn(),
