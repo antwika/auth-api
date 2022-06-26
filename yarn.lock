@@ -9,21 +9,12 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@antwika/app@0.0.10":
+"@antwika/app@0.0.10", "@antwika/app@^0.0.10":
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.10.tgz#8a11036daea741559a85492e406ae794c06b7d25"
   integrity sha512-scUJ/E2d+7PRdEjLQLg+BjnYiebbwST9xTLLiNfmCIaFOJK924/hnmvXMhQhdkxo0Bxj+GcShQrpKaNR5ZQkrg==
   dependencies:
     "@antwika/common" "0.0.12"
-    componentsjs "^5.0.1"
-    yargs "^17.4.1"
-
-"@antwika/app@0.0.9", "@antwika/app@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.9.tgz#9a23f4c96d5d3f3e0d41414b1f0f94d77d7da057"
-  integrity sha512-HMYI3UqAwoIIkGa+kJukCBSi5HAsegL4E/WpXSZ/jYYDyvhO3HUdWxt6v1+hFkA+qLRCVL3U3wxB0tW7T8JQlQ==
-  dependencies:
-    "@antwika/common" "0.0.11"
     componentsjs "^5.0.1"
     yargs "^17.4.1"
 
@@ -36,14 +27,6 @@
   version "0.0.12"
   resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.12.tgz#8eb53d6641a6330f6b6c1a1bc43b5ad24aeca344"
   integrity sha512-CsskvfvctFkj66ScPPB86RR1XI2pC7LCOK5n0VOkplcQgU8nvSJCoMrCpB4W+pD3xdMRNUHmcyop7boSKKdnKQ==
-
-"@antwika/http@0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.12.tgz#1ea8f55ad487ce37face76eaf9681d747d61b571"
-  integrity sha512-N6OWBtfrXveiuFu72DLYKY/X6M+4Dztgxv5Kzhv0b1wHUD99o/FyLDp1+ILEohicaXrwcC/ljOnCaNnAA/XA8w==
-  dependencies:
-    "@antwika/app" "0.0.9"
-    "@antwika/common" "0.0.11"
 
 "@antwika/http@0.0.13":
   version "0.0.13"
@@ -70,13 +53,13 @@
     mongodb "^4.6.0"
     mongodb-memory-server "^8.6.0"
 
-"@antwika/swagger@0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.6.tgz#bfcedc0cf9cc608957c4a9ee7b7956d274776da8"
-  integrity sha512-WxYXEVlblFX398Re6ZpSOU+PgeuM1f4BQZhDjMwRD5F8Jy7OJVgLclqvlwQUldMlTd3WFnKSJlaSgo0VWE8foA==
+"@antwika/swagger@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.7.tgz#82d91ed49db8d4811fd309cbf018297e7e15273b"
+  integrity sha512-1RUv7tiTnOrhtvppluJMLMzXvNALt9YHnEan1QjCqpQArfX+D8OUnQcjg4MAS0TO4o0Tm26RG9AUGzG+e0aTiA==
   dependencies:
-    "@antwika/app" "^0.0.9"
-    "@antwika/http" "0.0.12"
+    "@antwika/app" "^0.0.10"
+    "@antwika/http" "0.0.13"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7":
   version "7.16.7"
