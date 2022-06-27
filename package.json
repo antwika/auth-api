@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "name": "@antwika/auth-api",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "private": false,
   "engines": {
     "node": ">=16.15"
@@ -34,10 +34,10 @@
     "@types/oidc-provider": "7.11.1",
     "@typescript-eslint/eslint-plugin": "5.29.0",
     "@typescript-eslint/parser": "5.29.0",
-    "componentsjs-generator": "3.0.4",
+    "componentsjs-generator": "3.0.5",
     "eslint": "8.18.0",
     "eslint-config-airbnb-base": "15.0.0",
-    "eslint-import-resolver-typescript": "3.1.0",
+    "eslint-import-resolver-typescript": "3.1.1",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jest": "26.5.3",
     "husky": "8.0.1",
@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@antwika/app": "0.0.10",
-    "@antwika/common": "0.0.12",
+    "@antwika/common": "0.0.13",
     "@antwika/http": "0.0.13",
     "@antwika/prometheus": "^0.0.5",
     "@antwika/store": "^0.2.0",

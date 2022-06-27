@@ -28,6 +28,11 @@
   resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.12.tgz#8eb53d6641a6330f6b6c1a1bc43b5ad24aeca344"
   integrity sha512-CsskvfvctFkj66ScPPB86RR1XI2pC7LCOK5n0VOkplcQgU8nvSJCoMrCpB4W+pD3xdMRNUHmcyop7boSKKdnKQ==
 
+"@antwika/common@0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.13.tgz#354d5f6f7306ffd4fddda39f04b0219307d119e1"
+  integrity sha512-5h5uFAwj6lp0TPMMFYVqN/laDfKqg9zpskxJt+R9ryPz3acbk5h6ruSPwUDs3kM1xJJMQvHF4B2PQxtvCDy5aw==
+
 "@antwika/http@0.0.13":
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.13.tgz#1ae31a0ee9dce2322a2be39cad4892659cd0be04"
@@ -2011,10 +2016,10 @@ compare-func@^2.0.0:
     array-ify "^1.0.0"
     dot-prop "^5.1.0"
 
-componentsjs-generator@3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/componentsjs-generator/-/componentsjs-generator-3.0.4.tgz#3455692dbe1da239326556420238067aa274622a"
-  integrity sha512-DwSP/qUpOp9RP2hr/W38CyvYR9QIXfZTAH2zrtCrgfqkeTXJhu2Aov3WyV2XLTOM+D+4fo90h3HKJBoNuSG8hw==
+componentsjs-generator@3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/componentsjs-generator/-/componentsjs-generator-3.0.5.tgz#5caaebfdfe8e04030b080708842135e5ba7b7720"
+  integrity sha512-c8qLlWFX2LMsfDYMlPFRVS+0Vu57EaMotfCosDyjFfjQ/9RdkqzMW9quWos0n9tQ8SMBEoz4k7a1UX5wIbRKyg==
   dependencies:
     "@types/lru-cache" "^5.1.0"
     "@types/semver" "^7.3.4"
@@ -2639,10 +2644,10 @@ eslint-import-resolver-node@^0.3.6:
     debug "^3.2.7"
     resolve "^1.20.0"
 
-eslint-import-resolver-typescript@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-3.1.0.tgz#c2d244ad9285a27470959743ed55297748ee8ee4"
-  integrity sha512-sWRwY40hH3YKZL4eMbXHKAbmnoN+CQ/XoehVX4POeJYhaM0zKf/HZC3qzvYcA9mdaTD/63H7NSRMujTkFgvUXw==
+eslint-import-resolver-typescript@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-3.1.1.tgz#9a3e4b9260a39608b7e42fd12190f19f9913fcc3"
+  integrity sha512-rnC7s69VAXeg3RVhPIhiX8M/fHiPaDyK8zqw8wUDYy34weWQcfyvN5sw/74HhGKiv/teD+BF8bQMZthoyrWTvA==
   dependencies:
     debug "^4.3.4"
     enhanced-resolve "^5.9.3"

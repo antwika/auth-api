@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/antwika/auth-api/compare/v0.0.9...v0.0.10) (2022-06-26)
+
+
+### Features
+
+* added authenticate function to IAccountProvider ([1c62ada](https://github.com/antwika/auth-api/commit/1c62adaa4c5e80b810da094303bdc128509320dd))
+* configured persistent database connection & removed hard-coded records ([67f9261](https://github.com/antwika/auth-api/commit/67f926161593115179c5fa3eef88336a132504e9))
+* oidc-provider implementation ([1877344](https://github.com/antwika/auth-api/commit/18773449f7f90b3bf59b6050b54c19ce0044a8c0))
+* use @antwika/store ([b3b1c3a](https://github.com/antwika/auth-api/commit/b3b1c3ae51d919d719894ff783b4076c45d7b2e5))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @antwika/app to v0.0.10 ([0b4dac3](https://github.com/antwika/auth-api/commit/0b4dac3473ce034600feaa8c1fd8ab134821c381))
+* **deps:** update dependency @antwika/common to v0.0.12 ([e460a53](https://github.com/antwika/auth-api/commit/e460a53b3331ed4d047f3e26f3e6317540bd8b89))
+* **deps:** update dependency @antwika/http to v0.0.12 ([f6f0691](https://github.com/antwika/auth-api/commit/f6f0691ffbc9011de86301aab08856ba35fea898))
+* **deps:** update dependency @antwika/http to v0.0.13 ([12048b8](https://github.com/antwika/auth-api/commit/12048b8eb76c3e6e4a538526b46258487d14418e))
+* **deps:** update dependency @antwika/prometheus to ^0.0.4 ([9ccc637](https://github.com/antwika/auth-api/commit/9ccc637e82159e8f1c2051da1b1657dd1de06289))
+* **deps:** update dependency @antwika/prometheus to ^0.0.5 ([be831eb](https://github.com/antwika/auth-api/commit/be831eb23df975b5a17471b0a7fff4d3f20e27b0))
+* **deps:** update dependency @antwika/store to ^0.2.0 ([1d84b0b](https://github.com/antwika/auth-api/commit/1d84b0b3bf353ca91fd6c14829828fca4a733ab5))
+* **deps:** update dependency @antwika/swagger to v0.0.6 ([e4de427](https://github.com/antwika/auth-api/commit/e4de4277f5d4091c33cd801cef98b0901ba3afe7))
+* **deps:** update dependency @antwika/swagger to v0.0.7 ([a5fb637](https://github.com/antwika/auth-api/commit/a5fb637e0d0d27bed18f37142b81c83b49ea6488))
+* export new classes and update config ([8ec128e](https://github.com/antwika/auth-api/commit/8ec128e716b939897e715b371a7f3d991e5900e7))
+* wip ([4cfe2fc](https://github.com/antwika/auth-api/commit/4cfe2fce7bd5b21c85ebf98f5a85613ca53426e4))
+
 ### [0.0.9](https://github.com/antwika/auth-api/compare/v0.0.8...v0.0.9) (2022-06-11)
 
 
