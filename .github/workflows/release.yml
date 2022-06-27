@@ -1,5 +1,8 @@
 name: Release
-on: [workflow_dispatch]
+on:
+  schedule:
+    - cron: "15 12 * * 5" # Every Friday 12:15 UTC
+  workflow_dispatch:
 jobs:
   publish:
     runs-on: ubuntu-latest
