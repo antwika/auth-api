@@ -2016,10 +2016,10 @@ compare-func@^2.0.0:
     array-ify "^1.0.0"
     dot-prop "^5.1.0"
 
-componentsjs-generator@3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/componentsjs-generator/-/componentsjs-generator-3.0.4.tgz#3455692dbe1da239326556420238067aa274622a"
-  integrity sha512-DwSP/qUpOp9RP2hr/W38CyvYR9QIXfZTAH2zrtCrgfqkeTXJhu2Aov3WyV2XLTOM+D+4fo90h3HKJBoNuSG8hw==
+componentsjs-generator@3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/componentsjs-generator/-/componentsjs-generator-3.0.5.tgz#5caaebfdfe8e04030b080708842135e5ba7b7720"
+  integrity sha512-c8qLlWFX2LMsfDYMlPFRVS+0Vu57EaMotfCosDyjFfjQ/9RdkqzMW9quWos0n9tQ8SMBEoz4k7a1UX5wIbRKyg==
   dependencies:
     "@types/lru-cache" "^5.1.0"
     "@types/semver" "^7.3.4"
