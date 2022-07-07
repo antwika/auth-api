@@ -66,7 +66,7 @@
     "@antwika/http" "0.0.14"
     prom-client "^14.0.1"
 
-"@antwika/standard-version@^0.1.2":
+"@antwika/standard-version@0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@antwika/standard-version/-/standard-version-0.1.2.tgz#3f4b0e1dbbe47da4bcd27c2b2f0b6f51eca5bb73"
   integrity sha512-1n7Iqq4dhgdbgDLwSw2ul32T5MAyevYQDFWTR9zh0EI9ENuAnritXbgq5XmanN8k9MyJATJgKvGlC9Nz//d4Lg==
