@@ -1,5 +1,5 @@
 import { IStore } from '@antwika/store';
-import { randomBytes, randomUUID } from 'crypto';
+import { randomBytes } from 'crypto';
 
 type CookieKey = { secret: string };
 

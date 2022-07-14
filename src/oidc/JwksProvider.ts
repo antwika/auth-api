@@ -1,5 +1,4 @@
 import { IStore } from '@antwika/store';
-import { randomUUID } from 'crypto';
 import { exportJWK, generateKeyPair, JWK } from 'jose';
 
 export type KeyPair = {
