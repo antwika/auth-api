@@ -1,6 +1,6 @@
-import { Data, IStore } from '@antwika/store';
+import { IStore, WithId } from '@antwika/store';
 
-export interface IClient extends Data {
+export interface IClient {
   client_id: string,
   client_secret: string,
   grant_types: string[],
@@ -11,9 +11,9 @@ export interface IClient extends Data {
 }
 
 export interface IClientProvider {
-  registerClient: (client: IClient) => Promise<IClient>,
-  findClient: (id: string) => Promise<IClient>,
-  findAllClients: () => Promise<IClient[]>,
+  registerClient: (client: IClient) => Promise<WithId<IClient>>,
+  findClient: (id: string) => Promise<WithId<IClient>>,
+  findAllClients: () => Promise<WithId<IClient>[]>,
 }
 
 export class ClientProvider implements IClientProvider {
@@ -24,7 +24,7 @@ export class ClientProvider implements IClientProvider {
   }
 
   async registerClient(client: IClient) {
-    return this.store.create<IClient>(client);
+    return this.store.createWithoutId<IClient>(client);
   }
 
   async findClient(id: string) {

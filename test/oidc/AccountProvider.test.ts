@@ -11,17 +11,17 @@ describe('AccountProvider', () => {
   });
 
   it('can register a new account', async () => {
-    const registeredAccount = await accountProvider.registerAccount({
-      id: 'FooBar',
+    const account = {
       email: 'foo@bar.com',
       password: 'testpass',
       firstName: 'Foo',
       lastName: 'Bar',
-    });
+    };
+    const registeredAccount = await accountProvider.registerAccount(account);
 
-    expect(registeredAccount.accountId).toBe('FooBar');
+    expect(registeredAccount.accountId).toBeDefined();
     expect(await registeredAccount.claims()).toStrictEqual({
-      sub: 'FooBar',
+      sub: registeredAccount.accountId,
       email: 'foo@bar.com',
       firstName: 'Foo',
       lastName: 'Bar',
@@ -31,7 +31,7 @@ describe('AccountProvider', () => {
     expect(foundAccount.accountId).toBe(registeredAccount.accountId);
     expect(await foundAccount.claims()).toStrictEqual(await registeredAccount.claims());
 
-    await expect(accountProvider.authenticate('FooBar', 'testpass')).resolves.toBeTruthy();
-    await expect(accountProvider.authenticate('FooBar', 'wrongpass')).resolves.toBeFalsy();
+    await expect(accountProvider.authenticate('foo@bar.com', 'testpass')).resolves.toBeTruthy();
+    await expect(accountProvider.authenticate('foo@bar.com', 'wrongpass')).resolves.toBeFalsy();
   });
 });

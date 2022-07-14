@@ -12,7 +12,6 @@ describe('ClientProvider', () => {
 
   it('can register a new client', async () => {
     const client = {
-      id: '1234',
       client_id: 'test-id',
       client_secret: 'test-secret',
       grant_types: ['test-grant-type'],
@@ -24,13 +23,13 @@ describe('ClientProvider', () => {
 
     const registeredClient = await clientProvider.registerClient(client);
 
-    expect(registeredClient).toStrictEqual(client);
+    expect(registeredClient).toStrictEqual({ ...client, id: registeredClient.id });
 
     const foundClient = await clientProvider.findClient(registeredClient.id);
-    expect(foundClient).toStrictEqual(client);
+    expect(foundClient).toStrictEqual({ ...client, id: registeredClient.id });
 
     const allClients = await clientProvider.findAllClients();
     expect(allClients.length).toBe(1);
-    expect(allClients[0]).toStrictEqual(client);
+    expect(allClients[0]).toStrictEqual({ ...client, id: registeredClient.id });
   });
 });

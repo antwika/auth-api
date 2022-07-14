@@ -20,22 +20,15 @@ describe('ResourceIndicatorProvider', () => {
   });
 
   it('can register a new resource server info', async () => {
-    await resourceIndicatorProvider.registerResourceServerInfo({
-      id: 'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee',
+    const resourceServerInfo = {
       scope: 'openid',
       audience: 'test-client-id',
       accessTokenTTL: 7200,
       accessTokenFormat: 'jwt',
       jwt: { sign: { alg: 'ES256' } },
-    });
+    };
+    const { id } = await resourceIndicatorProvider.registerResourceServerInfo(resourceServerInfo);
     const rsi = await resourceIndicatorProvider.getResourceServerInfo('mock-context', 'mock-resource-indicator', { clientId: 'test-client-id' });
-    expect(rsi).toStrictEqual({
-      accessTokenFormat: 'jwt',
-      accessTokenTTL: 7200,
-      audience: 'test-client-id',
-      id: 'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee',
-      jwt: { sign: { alg: 'ES256' } },
-      scope: 'openid',
-    });
+    expect(rsi).toStrictEqual({ ...resourceServerInfo, id });
   });
 });
