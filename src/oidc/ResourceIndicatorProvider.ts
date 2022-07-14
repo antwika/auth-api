@@ -1,7 +1,7 @@
-import { Data, IStore } from '@antwika/store';
+import { IStore, WithId } from '@antwika/store';
 import { ResourceServer } from 'oidc-provider';
 
-export interface IResourceServerInfo extends Data {
+export interface IResourceServerInfo {
   scope: string,
   audience: string,
   accessTokenTTL: number,
@@ -16,7 +16,7 @@ export interface IResourceServerInfo extends Data {
 export interface IResourceIndicatorProvider {
   registerResourceServerInfo: (
     resourceServerInfo: IResourceServerInfo,
-  ) => Promise<IResourceServerInfo>,
+  ) => Promise<WithId<IResourceServerInfo>>,
   getDefaultResource: (ctx: any) => Promise<string>,
   getResourceServerInfo: (
     ctx: any,
@@ -33,7 +33,7 @@ export class ResourceIndicatorProvider implements IResourceIndicatorProvider {
   }
 
   async registerResourceServerInfo(resourceServerInfo: IResourceServerInfo) {
-    return this.store.create(resourceServerInfo);
+    return this.store.createWithoutId(resourceServerInfo);
   }
 
   async getDefaultResource(_ctx: any) {

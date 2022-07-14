@@ -1,7 +1,7 @@
-import { Data, IStore } from '@antwika/store';
+import { IStore } from '@antwika/store';
 import { randomBytes, randomUUID } from 'crypto';
 
-type CookieKey = Data & { secret: string };
+type CookieKey = { secret: string };
 
 export interface ICookiesProvider {
   getCookieKeys: () => Promise<string[]>;
@@ -26,8 +26,7 @@ export class CookiesProvider implements ICookiesProvider {
     }
 
     const secret = randomBytes(64).toString('hex');
-    await this.store.create<CookieKey>({
-      id: randomUUID(),
+    await this.store.createWithoutId<CookieKey>({
       secret,
     });
 

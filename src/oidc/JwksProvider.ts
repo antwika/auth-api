@@ -1,8 +1,8 @@
-import { Data, IStore } from '@antwika/store';
+import { IStore } from '@antwika/store';
 import { randomUUID } from 'crypto';
 import { exportJWK, generateKeyPair, JWK } from 'jose';
 
-export type KeyPair = Data & {
+export type KeyPair = {
   privateJwk: JWK,
   publicJwk: JWK,
 };
@@ -28,12 +28,11 @@ export class JwksProvider implements IJwksProvider {
 
     const { privateKey, publicKey } = await generateKeyPair('ES256');
     const keyPair: KeyPair = {
-      id: randomUUID(),
       privateJwk: { ...await exportJWK(privateKey), alg: 'ES256', use: 'sig' },
       publicJwk: { ...await exportJWK(publicKey), alg: 'ES256', use: 'sig' },
     };
 
-    return [await this.store.create(keyPair)];
+    return [await this.store.createWithoutId(keyPair)];
   }
 
   async getJwks(): Promise<{ keys: JWK[]}> {

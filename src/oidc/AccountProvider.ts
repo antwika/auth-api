@@ -1,6 +1,6 @@
-import { Data, IStore } from '@antwika/store';
+import { IStore } from '@antwika/store';
 
-export interface IAccount extends Data {
+export interface IAccount {
   email: string,
   password: string,
   firstName: string,
@@ -26,7 +26,7 @@ export interface IAccountProvider {
       lastName: string,
     }>,
   }>,
-  authenticate: (id: string, password: string) => Promise<boolean>,
+  authenticate: (email: string, password: string) => Promise<boolean>,
 }
 
 export class AccountProvider implements IAccountProvider {
@@ -37,7 +37,7 @@ export class AccountProvider implements IAccountProvider {
   }
 
   async registerAccount(account: IAccount) {
-    const created = await this.store.create<IAccount>(account);
+    const created = await this.store.createWithoutId<IAccount>(account);
     return {
       accountId: created.id,
       claims: async () => ({
@@ -62,11 +62,8 @@ export class AccountProvider implements IAccountProvider {
     };
   }
 
-  async authenticate(id: string, password: string) {
-    const account = await this.store.read<IAccount>(id);
-    if (account.password === password) {
-      return true;
-    }
-    return false;
+  async authenticate(email: string, password: string) {
+    const all = await this.store.readAll<IAccount>();
+    return all.some((account) => account.email === email && account.password === password);
   }
 }
