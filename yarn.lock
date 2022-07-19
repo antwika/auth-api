@@ -70,12 +70,12 @@
     semver "^7.1.1"
     yargs "^17.0.0"
 
-"@antwika/store@^0.3.0":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@antwika/store/-/store-0.3.1.tgz#9ec2cebadca96348bb2b697973d0f60105a64160"
-  integrity sha512-St8mJlLBAqcHv5CUy/PZsKnMfuQErZcKn7TdJZxbmqWJCb2TEHN6zU3sU2NBUICYsZOZC4U9M/kJrO6wuKKRew==
+"@antwika/store@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@antwika/store/-/store-0.4.0.tgz#24e419df36265a5a2b2b7a4c95109821e0859863"
+  integrity sha512-w8fMMdCR9Q+SkUYGwBNSld7A03EQuS9qFV6C1xEcUFRvLBfYunihAzz6J7R2duYSOWUCVZn0v+pROgmeMuZ7pA==
   dependencies:
-    "@antwika/common" "0.0.17"
+    "@antwika/common" "0.0.18"
     mongodb "^4.6.0"
     mongodb-memory-server "^8.6.0"
 
