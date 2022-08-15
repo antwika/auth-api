@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@antwika/app": "0.0.17",
-    "@antwika/common": "0.0.21",
+    "@antwika/common": "0.0.22",
     "@antwika/http": "0.0.20",
     "@antwika/prometheus": "^0.0.12",
     "@antwika/store": "^0.4.0",
