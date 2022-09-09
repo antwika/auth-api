@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.0.21](https://github.com/antwika/auth-api/compare/v0.0.20...v0.0.21) (2022-09-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @antwika/app to v0.0.21 ([dff9005](https://github.com/antwika/auth-api/commit/dff90050843cd1a742edaff2999682065b15604a))
+* **deps:** update dependency @antwika/common to v0.0.25 ([86f4f02](https://github.com/antwika/auth-api/commit/86f4f028922e48cb96e26a757f705c04b00e157f))
+* **deps:** update dependency @antwika/http to v0.0.24 ([2432b8f](https://github.com/antwika/auth-api/commit/2432b8f027ba6bb4e4ee816c432ea7e4d42b5b1b))
+* **deps:** update dependency @antwika/prometheus to ^0.0.16 ([b55b381](https://github.com/antwika/auth-api/commit/b55b3814f48558bf60b7c5702a068c26940fe09c))
+* **deps:** update dependency @antwika/swagger to v0.0.18 ([06f568c](https://github.com/antwika/auth-api/commit/06f568c34a716a466a648a4edf1cba561805f9e8))
+
 ## [0.0.20](https://github.com/antwika/auth-api/compare/v0.0.19...v0.0.20) (2022-09-02)
 
 
