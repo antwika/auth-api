@@ -47,7 +47,7 @@
     "typescript": "4.8.3"
   },
   "dependencies": {
-    "@antwika/app": "0.0.21",
+    "@antwika/app": "0.0.22",
     "@antwika/common": "0.0.26",
     "@antwika/http": "0.0.24",
     "@antwika/prometheus": "^0.0.16",
