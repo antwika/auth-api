@@ -49,7 +49,7 @@
   "dependencies": {
     "@antwika/app": "0.0.26",
     "@antwika/common": "0.0.30",
-    "@antwika/http": "0.0.28",
+    "@antwika/http": "0.0.29",
     "@antwika/prometheus": "^0.0.20",
     "@antwika/store": "^0.4.0",
     "@antwika/swagger": "0.0.22",
