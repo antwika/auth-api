@@ -1332,10 +1332,10 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz#d3357479a0fdfdd5907fe67e17e0a85c906e1301"
   integrity sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==
 
-"@types/oidc-provider@7.12.0":
-  version "7.12.0"
-  resolved "https://registry.yarnpkg.com/@types/oidc-provider/-/oidc-provider-7.12.0.tgz#6cb835b768c7a3042443c799f9b2b2cac035f98a"
-  integrity sha512-PQtsWdbjzq/AARiNu2WjPnnbiCF78BCYgDOdKW0VYsjrbDa9HN8dALt7bSIJ0O67ti1l0pYDk8UCpmUu8rPAUQ==
+"@types/oidc-provider@7.14.0":
+  version "7.14.0"
+  resolved "https://registry.yarnpkg.com/@types/oidc-provider/-/oidc-provider-7.14.0.tgz#5ca627e0b748f2a1a78a2aabbba7d57ce4c46f8e"
+  integrity sha512-zIoedB25LuuiNb0tqRQYI3BzdHXVCsZrCHm38apiLe1p6TmbZA7dCSv8rH3AR8xyBk7eNiE+iIBDEHlBx4UzPA==
   dependencies:
     "@types/koa" "*"
 
