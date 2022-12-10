@@ -29,7 +29,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@antwika/standard-version": "0.1.24",
+    "@antwika/standard-version": "0.1.25",
     "@types/jest": "29.2.4",
     "@types/node": "18.11.12",
     "@types/oidc-provider": "7.14.0",
