@@ -44,10 +44,10 @@
     "@antwika/http" "0.0.38"
     prom-client "^14.0.1"
 
-"@antwika/standard-version@0.1.25":
-  version "0.1.25"
-  resolved "https://registry.yarnpkg.com/@antwika/standard-version/-/standard-version-0.1.25.tgz#4a5d8328f824f49a1f87e77f340230bea2674d1b"
-  integrity sha512-2IHnbVhfLSiU01RYgLcbYq7B0E4lWYwkxwLCoLHgXT60TsPcC2VxSS8TKWkEwNBE6Yk4OUaBXHm2vPI4yZUatQ==
+"@antwika/standard-version@0.1.26":
+  version "0.1.26"
+  resolved "https://registry.yarnpkg.com/@antwika/standard-version/-/standard-version-0.1.26.tgz#4c0c40bcf932d7bc32bf30e40a6211cf2d544055"
+  integrity sha512-UKD/PBtwx/suZulLFF45iVUClYuGGxQjumeqldqaTvX+vQXw14ThylwOFWzUG1fb75rThT/jAfqFjEmXvhQKIg==
   dependencies:
     conventional-changelog "3.1.25"
     conventional-changelog-config-spec "2.1.0"
