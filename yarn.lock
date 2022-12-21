@@ -18,6 +18,15 @@
     componentsjs "^5.0.1"
     yargs "^17.4.1"
 
+"@antwika/app@0.0.36":
+  version "0.0.36"
+  resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.36.tgz#8bc62113a8eb6867decdf75784cd1c4a79c8f99d"
+  integrity sha512-vC4rQWdiuRLRAzj00JFFCwZL1Hn1rmSkg4iXe13VhSFzubGPfvKzoJAixRVsxorj/jRYu4Q4+h/du91VxNXtzw==
+  dependencies:
+    "@antwika/common" "0.0.40"
+    componentsjs "^5.0.1"
+    yargs "^17.4.1"
+
 "@antwika/common@0.0.18":
   version "0.0.18"
   resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.18.tgz#ece6525d6fabf4b1dde9955ff905a926b232771f"
@@ -40,6 +49,14 @@
   dependencies:
     "@antwika/app" "0.0.35"
     "@antwika/common" "0.0.39"
+
+"@antwika/http@0.0.39":
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.39.tgz#1f3c6ac1bc17df5a2a3b74a6875fdbae3764fbcc"
+  integrity sha512-a5kqsFTzBW/b+5f2We2lPjg7gO++Uzj7czvs4z0U7nWmFGZa5vefhyMX1TzZGHRZD/wGtrNp3LQU9p2Ba4SkmA==
+  dependencies:
+    "@antwika/app" "0.0.36"
+    "@antwika/common" "0.0.40"
 
 "@antwika/prometheus@^0.0.30":
   version "0.0.30"
