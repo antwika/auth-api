@@ -58,12 +58,12 @@
     "@antwika/app" "0.0.36"
     "@antwika/common" "0.0.40"
 
-"@antwika/prometheus@^0.0.30":
-  version "0.0.30"
-  resolved "https://registry.yarnpkg.com/@antwika/prometheus/-/prometheus-0.0.30.tgz#2341cb371265453778e8bad23e5ae29d324714f0"
-  integrity sha512-sfBcxmSTWszdycqnS5eoktRJnL8aHKtDnt5yiGkyHO2lXxsPJPFM0w+ZOQp44GObNoRS2tKSIjue7Eb2XH3ynA==
+"@antwika/prometheus@^0.0.31":
+  version "0.0.31"
+  resolved "https://registry.yarnpkg.com/@antwika/prometheus/-/prometheus-0.0.31.tgz#07197d37b50ae0547f476675b454426baf369362"
+  integrity sha512-dWO08lA8kTknE3bysANInkphHPtGbCRq7ERNdHoPv8fD1Z4QKWTj0DM8Rv0K//khJS3ZKWybOZU7sYybeKGuTw==
   dependencies:
-    "@antwika/http" "0.0.38"
+    "@antwika/http" "0.0.39"
     prom-client "^14.0.1"
 
 "@antwika/standard-version@0.1.26":
