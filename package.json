@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "name": "@antwika/auth-api",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "private": false,
   "engines": {
     "node": ">=16.15"
