@@ -52,7 +52,7 @@
     "@antwika/http": "0.0.40",
     "@antwika/prometheus": "^0.0.32",
     "@antwika/store": "^0.4.0",
-    "@antwika/swagger": "0.0.33",
+    "@antwika/swagger": "0.0.34",
     "componentsjs": "^5.0.1",
     "jose": "^4.8.1",
     "oidc-provider": "^7.11.1"
