@@ -9,16 +9,7 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@antwika/app@0.0.39", "@antwika/app@^0.0.39":
-  version "0.0.39"
-  resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.39.tgz#215a030f86e52f7a08e73a9145381934f170186c"
-  integrity sha512-IrLDXBKLhXdi64GHeZ+1B9cR9KyZV/QWSCj1Nw729kbTIF8brEgtHPw95oHl5kgwZBgj1Edckqdt/m0Slly7pg==
-  dependencies:
-    "@antwika/common" "0.0.43"
-    componentsjs "^5.0.1"
-    yargs "^17.4.1"
-
-"@antwika/app@0.0.40":
+"@antwika/app@0.0.40", "@antwika/app@^0.0.40":
   version "0.0.40"
   resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.40.tgz#41fdd37a8dfd859192298c36ffdaf7ad5372daf3"
   integrity sha512-IMceFVyX/Ym4ap1Jj2OOA5wqHtMQtGw5rtA2PLquHg8OMNVKJhfC4WRWwcPivcM7p0nOdho5ha/Bj4GES0IYbQ==
@@ -32,23 +23,10 @@
   resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.18.tgz#ece6525d6fabf4b1dde9955ff905a926b232771f"
   integrity sha512-dXD9KuX/ho1VfG4HWMWKqF0R+DuPJRpzOCyXYzP463Po9F8l0+nNCzooM9O5g6tUyrO7ygq1BnM+kjp9Tm2D6w==
 
-"@antwika/common@0.0.43":
-  version "0.0.43"
-  resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.43.tgz#8c1c6df54b1b9ae6398aa69632299760b0ff6d5a"
-  integrity sha512-NTrlanjUOWjChIYh2akBHzxmGOHSG77CIUsB7GLEWckB7nWKja2oNcqISXKK0Rl9Uvf4qj17abeytPNydlQyTQ==
-
 "@antwika/common@0.0.44":
   version "0.0.44"
   resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.44.tgz#18b5a57686f15bc9b567f5ee2464c3fd1c596f9c"
   integrity sha512-O0JbF2zzghhqt/JDaPksrwLA/rYxzzzMLDyyAQMyMe0ZjK4ftfM5jO/GxUUZI4cDFONXU8Yvaq4O72cWOTq+bQ==
-
-"@antwika/http@0.0.42":
-  version "0.0.42"
-  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.42.tgz#8c54da71e73abc4c4d16d57bb2fba8a9c824db97"
-  integrity sha512-WQy1lTvFZ2NSwGwwpQkNv/2DCcbP8Pul81bV+YfHcztJIRZn7UeTkPopRT22O6WNWOj+OeqSXyDO9DO9eGvRqA==
-  dependencies:
-    "@antwika/app" "0.0.39"
-    "@antwika/common" "0.0.43"
 
 "@antwika/http@0.0.43":
   version "0.0.43"
@@ -92,13 +70,13 @@
     mongodb "^4.6.0"
     mongodb-memory-server "^8.6.0"
 
-"@antwika/swagger@0.0.36":
-  version "0.0.36"
-  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.36.tgz#16ef0c6f6628f6f53fee5c249d2842bb581d2e31"
-  integrity sha512-AXmkPMS/QpvQpmkkC0iX3H4gEsa0I2GNhT/CJ9f2HTvZ1z8RhaogYU8MRlfNs5w4h1j9z8ZWBvvuezeN5cTOLg==
+"@antwika/swagger@0.0.37":
+  version "0.0.37"
+  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.37.tgz#7e1bce7ade6514afcc59f720c9cf594f1bcb325a"
+  integrity sha512-vqM7GFx0jxkpnVfTjGniXCn0cyYgbX6HpKpojsW91VAqsTev7K9djb+HJkM9u8xITZzDp+7leI4zNY6c7z8caw==
   dependencies:
-    "@antwika/app" "^0.0.39"
-    "@antwika/http" "0.0.42"
+    "@antwika/app" "^0.0.40"
+    "@antwika/http" "0.0.43"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7":
   version "7.16.7"
