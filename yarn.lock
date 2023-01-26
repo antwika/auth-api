@@ -9,7 +9,7 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@antwika/app@0.0.40", "@antwika/app@^0.0.40":
+"@antwika/app@0.0.40":
   version "0.0.40"
   resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.40.tgz#41fdd37a8dfd859192298c36ffdaf7ad5372daf3"
   integrity sha512-IMceFVyX/Ym4ap1Jj2OOA5wqHtMQtGw5rtA2PLquHg8OMNVKJhfC4WRWwcPivcM7p0nOdho5ha/Bj4GES0IYbQ==
@@ -18,7 +18,7 @@
     componentsjs "^5.0.1"
     yargs "^17.4.1"
 
-"@antwika/app@0.0.41":
+"@antwika/app@0.0.41", "@antwika/app@^0.0.41":
   version "0.0.41"
   resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.41.tgz#b8c1bee9ac0cb44aa9123bac906c0b8f8a6826ad"
   integrity sha512-XYoRQyg3Bg7+Cwfz69evs6xhdfNFhwhESGVrKgB9vot3pQsZkW7f1T5YPNlbm+ffi8PmjP/cW9d8Mv7HcklvAA==
@@ -92,13 +92,13 @@
     mongodb "^4.6.0"
     mongodb-memory-server "^8.6.0"
 
-"@antwika/swagger@0.0.37":
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.37.tgz#7e1bce7ade6514afcc59f720c9cf594f1bcb325a"
-  integrity sha512-vqM7GFx0jxkpnVfTjGniXCn0cyYgbX6HpKpojsW91VAqsTev7K9djb+HJkM9u8xITZzDp+7leI4zNY6c7z8caw==
+"@antwika/swagger@0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.38.tgz#3608f4f112b34bc6f55350a43d007a8e9864a8e6"
+  integrity sha512-gmJTx+uBTb7Bmj1kDDhxj+btTz7CRIkaSnteDBv4C0VjleVTum1u9Q6ukH16vAlBt8IYxtLglDL4piHb87sCrA==
   dependencies:
-    "@antwika/app" "^0.0.40"
-    "@antwika/http" "0.0.43"
+    "@antwika/app" "^0.0.41"
+    "@antwika/http" "0.0.44"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7":
   version "7.16.7"
