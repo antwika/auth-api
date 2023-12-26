@@ -18,6 +18,15 @@
     componentsjs "^5.0.1"
     yargs "^17.4.1"
 
+"@antwika/app@0.0.89":
+  version "0.0.89"
+  resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.89.tgz#e2bd00b1e3bb720681a3f69b3efdce15bc600de8"
+  integrity sha512-uQQ1CCBeYZbxwhFUgwrH69RACQYB9PHOGlII3nAYxYgXDYeOqmfb3Ra/Ki3vYZKJaEqfgYJfT/VLQ7DFkCMf1A==
+  dependencies:
+    "@antwika/common" "0.0.93"
+    componentsjs "^5.0.1"
+    yargs "^17.4.1"
+
 "@antwika/common@0.0.18":
   version "0.0.18"
   resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.18.tgz#ece6525d6fabf4b1dde9955ff905a926b232771f"
@@ -27,6 +36,11 @@
   version "0.0.48"
   resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.48.tgz#fe187d34b0ebad97222af39ac69fa9d1106e62b8"
   integrity sha512-LJ4GtyHDoJ6KP5mbOFudncfHQxKQw1X95/HoKmKM9cFUBGXVO3E3IlzDRnhhJsDU7acnYSQ0Z8zJOTvxDVQH8w==
+
+"@antwika/common@0.0.93":
+  version "0.0.93"
+  resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.93.tgz#883af4fc038554e83f2b867dc9a2a25100adc77f"
+  integrity sha512-e6nJGhnuolh5THOQ5SO6p2GLx4F/zEYGteUXN8ZAvVHrlPcJfBZ42k1JUBdYR8NQzzmAnN09R9UGbZh/sLM/3A==
 
 "@antwika/http@0.0.47":
   version "0.0.47"
