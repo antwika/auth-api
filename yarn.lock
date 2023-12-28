@@ -9,12 +9,21 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@antwika/app@0.0.44", "@antwika/app@^0.0.44":
+"@antwika/app@0.0.44":
   version "0.0.44"
   resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.44.tgz#f178e2c908b0115643c6ad432baef9c64f8ed261"
   integrity sha512-X7N8PZj6DSh5k4X1Ef3hPjpZ3g4BEDtHaskND6Iqyurs/TvJ0/OAKIzXxQhMmCtwulAScwAnYwDWX7XS0PNC5Q==
   dependencies:
     "@antwika/common" "0.0.48"
+    componentsjs "^5.0.1"
+    yargs "^17.4.1"
+
+"@antwika/app@0.0.89", "@antwika/app@^0.0.89":
+  version "0.0.89"
+  resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.89.tgz#e2bd00b1e3bb720681a3f69b3efdce15bc600de8"
+  integrity sha512-uQQ1CCBeYZbxwhFUgwrH69RACQYB9PHOGlII3nAYxYgXDYeOqmfb3Ra/Ki3vYZKJaEqfgYJfT/VLQ7DFkCMf1A==
+  dependencies:
+    "@antwika/common" "0.0.93"
     componentsjs "^5.0.1"
     yargs "^17.4.1"
 
@@ -28,6 +37,11 @@
   resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.48.tgz#fe187d34b0ebad97222af39ac69fa9d1106e62b8"
   integrity sha512-LJ4GtyHDoJ6KP5mbOFudncfHQxKQw1X95/HoKmKM9cFUBGXVO3E3IlzDRnhhJsDU7acnYSQ0Z8zJOTvxDVQH8w==
 
+"@antwika/common@0.0.93":
+  version "0.0.93"
+  resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.93.tgz#883af4fc038554e83f2b867dc9a2a25100adc77f"
+  integrity sha512-e6nJGhnuolh5THOQ5SO6p2GLx4F/zEYGteUXN8ZAvVHrlPcJfBZ42k1JUBdYR8NQzzmAnN09R9UGbZh/sLM/3A==
+
 "@antwika/http@0.0.47":
   version "0.0.47"
   resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.47.tgz#68a19c1d9e22ca497ba898db16cb62b03cac5472"
@@ -35,6 +49,14 @@
   dependencies:
     "@antwika/app" "0.0.44"
     "@antwika/common" "0.0.48"
+
+"@antwika/http@0.0.92":
+  version "0.0.92"
+  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.92.tgz#3f808c87713d273ff6f8f5c35eec8299c0144412"
+  integrity sha512-lJxhIT8POjrlUbUfYzAkjXSwwig7nsm1cBXaOGMTVMt3OUz1IAY+fHjmiO4hQTPqlFrVb7I5Gbf3JCDW6gMm8Q==
+  dependencies:
+    "@antwika/app" "0.0.89"
+    "@antwika/common" "0.0.93"
 
 "@antwika/prometheus@^0.0.39":
   version "0.0.39"
@@ -70,13 +92,13 @@
     mongodb "^4.6.0"
     mongodb-memory-server "^8.6.0"
 
-"@antwika/swagger@0.0.41":
-  version "0.0.41"
-  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.41.tgz#2c780bc3f3fb0d55a8bbbcc5b226cd738a08a676"
-  integrity sha512-ZxY72Ro5Uz+nIOWZgTPmaE2I/+iKClpAIMCOSQRFMSAO8wsvamcdtqqmN6Y6DpYsA3xzFE3bazNOBTkH9LK3yg==
+"@antwika/swagger@0.0.86":
+  version "0.0.86"
+  resolved "https://registry.yarnpkg.com/@antwika/swagger/-/swagger-0.0.86.tgz#c6386419fb0c519359ad9e53d2e3458fdbb34043"
+  integrity sha512-1/sQsndn70vbBTByq1yp+3cmBz743AWZZlOFp1HExfri+obTkKg2XLSXSvZ4eNU69NzW526wYoQb+fld+eLzKA==
   dependencies:
-    "@antwika/app" "^0.0.44"
-    "@antwika/http" "0.0.47"
+    "@antwika/app" "^0.0.89"
+    "@antwika/http" "0.0.92"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7":
   version "7.16.7"
