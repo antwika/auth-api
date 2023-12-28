@@ -18,6 +18,15 @@
     componentsjs "^5.0.1"
     yargs "^17.4.1"
 
+"@antwika/app@0.0.89":
+  version "0.0.89"
+  resolved "https://registry.yarnpkg.com/@antwika/app/-/app-0.0.89.tgz#e2bd00b1e3bb720681a3f69b3efdce15bc600de8"
+  integrity sha512-uQQ1CCBeYZbxwhFUgwrH69RACQYB9PHOGlII3nAYxYgXDYeOqmfb3Ra/Ki3vYZKJaEqfgYJfT/VLQ7DFkCMf1A==
+  dependencies:
+    "@antwika/common" "0.0.93"
+    componentsjs "^5.0.1"
+    yargs "^17.4.1"
+
 "@antwika/common@0.0.18":
   version "0.0.18"
   resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.18.tgz#ece6525d6fabf4b1dde9955ff905a926b232771f"
@@ -28,6 +37,11 @@
   resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.48.tgz#fe187d34b0ebad97222af39ac69fa9d1106e62b8"
   integrity sha512-LJ4GtyHDoJ6KP5mbOFudncfHQxKQw1X95/HoKmKM9cFUBGXVO3E3IlzDRnhhJsDU7acnYSQ0Z8zJOTvxDVQH8w==
 
+"@antwika/common@0.0.93":
+  version "0.0.93"
+  resolved "https://registry.yarnpkg.com/@antwika/common/-/common-0.0.93.tgz#883af4fc038554e83f2b867dc9a2a25100adc77f"
+  integrity sha512-e6nJGhnuolh5THOQ5SO6p2GLx4F/zEYGteUXN8ZAvVHrlPcJfBZ42k1JUBdYR8NQzzmAnN09R9UGbZh/sLM/3A==
+
 "@antwika/http@0.0.47":
   version "0.0.47"
   resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.47.tgz#68a19c1d9e22ca497ba898db16cb62b03cac5472"
@@ -36,13 +50,21 @@
     "@antwika/app" "0.0.44"
     "@antwika/common" "0.0.48"
 
-"@antwika/prometheus@^0.0.39":
-  version "0.0.39"
-  resolved "https://registry.yarnpkg.com/@antwika/prometheus/-/prometheus-0.0.39.tgz#1fe9af365760d277a28005e74668a8de0dad557f"
-  integrity sha512-055S8CTxyRDUkJk6T6PGkHC7tPY6a1P78hRiIzoofrCHPaM2DNWmA3z4Q3I7OMxWxpdzzNUjOb3SqRrN85gyew==
+"@antwika/http@0.0.92":
+  version "0.0.92"
+  resolved "https://registry.yarnpkg.com/@antwika/http/-/http-0.0.92.tgz#3f808c87713d273ff6f8f5c35eec8299c0144412"
+  integrity sha512-lJxhIT8POjrlUbUfYzAkjXSwwig7nsm1cBXaOGMTVMt3OUz1IAY+fHjmiO4hQTPqlFrVb7I5Gbf3JCDW6gMm8Q==
   dependencies:
-    "@antwika/http" "0.0.47"
-    prom-client "^14.0.1"
+    "@antwika/app" "0.0.89"
+    "@antwika/common" "0.0.93"
+
+"@antwika/prometheus@^0.0.84":
+  version "0.0.84"
+  resolved "https://registry.yarnpkg.com/@antwika/prometheus/-/prometheus-0.0.84.tgz#c9e34387142228408b1475840f2e51c887c4bef8"
+  integrity sha512-uz0vvJSLg3yyZiT39p7hdZL/UIINNXlzcPTnB+/DSw4wGFDQD2zn3u8xATrT2ukHC2gN+EzEArS5Webghh3rew==
+  dependencies:
+    "@antwika/http" "0.0.92"
+    prom-client "^15.0.0"
 
 "@antwika/standard-version@0.1.34":
   version "0.1.34"
@@ -1037,6 +1059,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@opentelemetry/api@^1.4.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@opentelemetry/api/-/api-1.7.0.tgz#b139c81999c23e3c8d3c0a7234480e945920fc40"
+  integrity sha512-AdY5wvN0P2vXBi3b29hxZgSFvdhdxPB9+f0B6s//P9Q8nibRWeA3cHm8UmLpio9ABigkVHJ5NMPk+Mz8VCCyrw==
 
 "@pkgr/utils@^2.3.1":
   version "2.3.1"
@@ -5334,11 +5361,12 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-prom-client@^14.0.1:
-  version "14.0.1"
-  resolved "https://registry.yarnpkg.com/prom-client/-/prom-client-14.0.1.tgz#bdd9583e02ec95429677c0e013712d42ef1f86a8"
-  integrity sha512-HxTArb6fkOntQHoRGvv4qd/BkorjliiuO2uSWC2KC17MUTKYttWdDoXX/vxOhQdkoECEM9BBH0pj2l8G8kev6w==
+prom-client@^15.0.0:
+  version "15.1.0"
+  resolved "https://registry.yarnpkg.com/prom-client/-/prom-client-15.1.0.tgz#816a4a2128da169d0471093baeccc6d2f17a4613"
+  integrity sha512-cCD7jLTqyPdjEPBo/Xk4Iu8jxjuZgZJ3e/oET3L+ZwOuap/7Cw3dH/TJSsZKs1TQLZ2IHpIlRAKw82ef06kmMw==
   dependencies:
+    "@opentelemetry/api" "^1.4.0"
     tdigest "^0.1.1"
 
 promise-polyfill@^1.1.6:
